@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04d8deb3-5c20-4b57-84bc-4daefdff3bb9" name="Default Changelist" comment="" />
+    <list default="true" id="04d8deb3-5c20-4b57-84bc-4daefdff3bb9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +29,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1XHnm6KifAabXXfgIyJq2qqHMVS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -138,12 +144,24 @@
       <workItem from="1580712052824" duration="8615000" />
       <workItem from="1581315709342" duration="7989000" />
       <workItem from="1581916674193" duration="9037000" />
-      <workItem from="1582085794804" duration="6948000" />
+      <workItem from="1582085794804" duration="7525000" />
     </task>
+    <task id="LOCAL-00001" summary="首次提交">
+      <created>1582095517171</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582095517171</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="首次提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="首次提交" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1093" y="453" key="#com.intellij.ide.util.MemberChooser" timestamp="1582091409891">
@@ -154,22 +172,26 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1018" y="484" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1580741276494" />
-    <state width="2560" height="301" key="GridCell.Tab.0.bottom" timestamp="1582094913792">
+    <state x="783" y="239" key="CommitChangelistDialog2" timestamp="1582095516758">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2560" height="301" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1582094913792" />
-    <state width="2560" height="301" key="GridCell.Tab.0.center" timestamp="1582094913791">
+    <state x="783" y="239" key="CommitChangelistDialog2/0.23.2560.1417@0.23.2560.1417" timestamp="1582095516758" />
+    <state width="2560" height="301" key="GridCell.Tab.0.bottom" timestamp="1582095731231">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2560" height="301" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1582094913791" />
-    <state width="2560" height="301" key="GridCell.Tab.0.left" timestamp="1582094913790">
+    <state width="2560" height="301" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1582095731231" />
+    <state width="2560" height="301" key="GridCell.Tab.0.center" timestamp="1582095731231">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2560" height="301" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1582094913790" />
-    <state width="2560" height="301" key="GridCell.Tab.0.right" timestamp="1582094913792">
+    <state width="2560" height="301" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1582095731231" />
+    <state width="2560" height="301" key="GridCell.Tab.0.left" timestamp="1582095731230">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2560" height="301" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1582094913792" />
+    <state width="2560" height="301" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1582095731230" />
+    <state width="2560" height="301" key="GridCell.Tab.0.right" timestamp="1582095731231">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="2560" height="301" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1582095731231" />
     <state width="2560" height="301" key="GridCell.Tab.1.bottom" timestamp="1582032870856">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
@@ -190,6 +212,10 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="768" y="312" key="SettingsEditor/0.23.2560.1417@0.23.2560.1417" timestamp="1582095428068" />
+    <state x="880" y="466" key="Vcs.Push.Dialog.v2" timestamp="1582096065777">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="880" y="466" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1582096065777" />
     <state x="945" y="348" width="670" height="676" key="search.everywhere.popup" timestamp="1582089552501">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
