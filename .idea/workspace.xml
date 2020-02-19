@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="04d8deb3-5c20-4b57-84bc-4daefdff3bb9" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XHnm6KifAabXXfgIyJq2qqHMVS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunManager" selected="JUnit.SwaggerApplicationTests.selectUserBySwaggerIdTest">
+    <configuration name="SwaggerApplicationTests.encryptTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Swagger" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="indi.swagger.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="indi.swagger" />
+      <option name="MAIN_CLASS_NAME" value="indi.swagger.SwaggerApplicationTests" />
+      <option name="METHOD_NAME" value="encryptTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SwaggerApplicationTests.selectUserByPhoneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Swagger" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="indi.swagger.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="indi.swagger" />
+      <option name="MAIN_CLASS_NAME" value="indi.swagger.SwaggerApplicationTests" />
+      <option name="METHOD_NAME" value="selectUserByPhoneTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SwaggerApplicationTests.selectUserBySwaggerIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Swagger" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="indi.swagger.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="indi.swagger" />
+      <option name="MAIN_CLASS_NAME" value="indi.swagger.SwaggerApplicationTests" />
+      <option name="METHOD_NAME" value="selectUserBySwaggerIdTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SwaggerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Swagger" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="indi.swagger.SwaggerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SwaggerApplicationTests.selectUserBySwaggerIdTest" />
+        <item itemvalue="JUnit.SwaggerApplicationTests.selectUserByPhoneTest" />
+        <item itemvalue="JUnit.SwaggerApplicationTests.encryptTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="04d8deb3-5c20-4b57-84bc-4daefdff3bb9" name="Default Changelist" comment="" />
+      <created>1580712043662</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580712043662</updated>
+      <workItem from="1580712052824" duration="8615000" />
+      <workItem from="1581315709342" duration="7989000" />
+      <workItem from="1581916674193" duration="9037000" />
+      <workItem from="1582085794804" duration="6948000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1093" y="453" key="#com.intellij.ide.util.MemberChooser" timestamp="1582091409891">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="1093" y="453" key="#com.intellij.ide.util.MemberChooser/0.23.2560.1417@0.23.2560.1417" timestamp="1582091409891" />
+    <state x="1018" y="484" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580741276494">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="1018" y="484" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1580741276494" />
+    <state width="2560" height="301" key="GridCell.Tab.0.bottom" timestamp="1582094913792">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="2560" height="301" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1582094913792" />
+    <state width="2560" height="301" key="GridCell.Tab.0.center" timestamp="1582094913791">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="2560" height="301" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1582094913791" />
+    <state width="2560" height="301" key="GridCell.Tab.0.left" timestamp="1582094913790">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="2560" height="301" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1582094913790" />
+    <state width="2560" height="301" key="GridCell.Tab.0.right" timestamp="1582094913792">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="2560" height="301" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1582094913792" />
+    <state width="2560" height="301" key="GridCell.Tab.1.bottom" timestamp="1582032870856">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="2560" height="301" key="GridCell.Tab.1.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1582032870856" />
+    <state width="2560" height="301" key="GridCell.Tab.1.center" timestamp="1582032870854">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="2560" height="301" key="GridCell.Tab.1.center/0.23.2560.1417@0.23.2560.1417" timestamp="1582032870854" />
+    <state width="2560" height="301" key="GridCell.Tab.1.left" timestamp="1582032870854">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="2560" height="301" key="GridCell.Tab.1.left/0.23.2560.1417@0.23.2560.1417" timestamp="1582032870854" />
+    <state width="2560" height="301" key="GridCell.Tab.1.right" timestamp="1582032870854">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="2560" height="301" key="GridCell.Tab.1.right/0.23.2560.1417@0.23.2560.1417" timestamp="1582032870854" />
+    <state x="768" y="312" key="SettingsEditor" timestamp="1582095428068">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="768" y="312" key="SettingsEditor/0.23.2560.1417@0.23.2560.1417" timestamp="1582095428068" />
+    <state x="945" y="348" width="670" height="676" key="search.everywhere.popup" timestamp="1582089552501">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="945" y="348" width="670" height="676" key="search.everywhere.popup/0.23.2560.1417@0.23.2560.1417" timestamp="1582089552501" />
+  </component>
+</project>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="indi.swagger.mapper.UserMapper">
+
+    <sql id="selectUser">
+        select user_id as userId,
+               user_name as userName,
+               user_sex as userSex,
+               user_password as userPassword,
+               user_phone as userPhone,
+               user_swagger_id as userSwaggerId,
+               user_portrait as userPortrait,
+               user_bio as userBio,
+               user_create_time as userCreateTime,
+               user_modify_time as userModifyTime,
+               user_login_info_id as userLoginInfoId
+          from t_user_profile
+    </sql>
+
+    <select id="selectUserByPhone" resultType="indi.swagger.entity.UserProfile" parameterType="string">
+        <include refid="selectUser"></include>
+        where user_phone=#{phone}
+    </select>
+    <select id="selectUserBySwaggerId" resultType="indi.swagger.entity.UserProfile" parameterType="string">
+        <include refid="selectUser"></include>
+        where user_swagger_id=#{swaggerId}
+    </select>
+</mapper>
