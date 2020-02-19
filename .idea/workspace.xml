@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04d8deb3-5c20-4b57-84bc-4daefdff3bb9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/controller/VerCodeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/entity/VerCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/mapper/VerCodeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/service/VerCodeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/service/impl/VerCodeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/verCodeMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/opendoc.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/opendoc.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/indi/swagger/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/indi/swagger/controller/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/indi/swagger/entity/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/indi/swagger/mapper/TestMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/indi/swagger/service/TestService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/indi/swagger/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/indi/swagger/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/testMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/indi/swagger/entity/UserLoginInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/entity/UserLoginInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/indi/swagger/entity/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/entity/UserProfile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +153,7 @@
       <workItem from="1580712052824" duration="8615000" />
       <workItem from="1581315709342" duration="7989000" />
       <workItem from="1581916674193" duration="9037000" />
-      <workItem from="1582085794804" duration="10540000" />
+      <workItem from="1582085794804" duration="11698000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交">
       <created>1582095517171</created>
@@ -181,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582096907319</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="实现查询用户API">
+      <created>1582103380270</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1582103380270</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,21 +232,22 @@
     <MESSAGE value="新增了README" />
     <MESSAGE value="删除HELP.md" />
     <MESSAGE value="基础架构" />
-    <option name="LAST_COMMIT_MESSAGE" value="基础架构" />
+    <MESSAGE value="实现查询用户API" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现查询用户API" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1093" y="453" key="#com.intellij.ide.util.MemberChooser" timestamp="1582091409891">
+    <state x="1093" y="453" key="#com.intellij.ide.util.MemberChooser" timestamp="1582118412150">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state x="1093" y="453" key="#com.intellij.ide.util.MemberChooser/0.23.2560.1417@0.23.2560.1417" timestamp="1582091409891" />
+    <state x="1093" y="453" key="#com.intellij.ide.util.MemberChooser/0.23.2560.1417@0.23.2560.1417" timestamp="1582118412150" />
     <state x="1018" y="484" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580741276494">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1018" y="484" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1580741276494" />
-    <state x="783" y="239" key="CommitChangelistDialog2" timestamp="1582096907036">
+    <state x="783" y="239" key="CommitChangelistDialog2" timestamp="1582118735548">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state x="783" y="239" key="CommitChangelistDialog2/0.23.2560.1417@0.23.2560.1417" timestamp="1582096907036" />
+    <state x="783" y="239" key="CommitChangelistDialog2/0.23.2560.1417@0.23.2560.1417" timestamp="1582118735548" />
     <state width="2560" height="301" key="GridCell.Tab.0.bottom" timestamp="1582103283542">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
@@ -274,10 +284,10 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="768" y="312" key="SettingsEditor/0.23.2560.1417@0.23.2560.1417" timestamp="1582095428068" />
-    <state x="880" y="466" key="Vcs.Push.Dialog.v2" timestamp="1582103353432">
+    <state x="880" y="466" key="Vcs.Push.Dialog.v2" timestamp="1582103391870">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state x="880" y="466" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1582103353432" />
+    <state x="880" y="466" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1582103391870" />
     <state x="945" y="348" width="670" height="676" key="search.everywhere.popup" timestamp="1582089552501">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>

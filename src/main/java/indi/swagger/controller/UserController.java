@@ -14,7 +14,7 @@ import java.util.Map;
 
 /**
  * @program: Swagger
- * @description: 用户控制层
+ * @description: 用户控制器
  * @author: 张文轩
  * @create: 2020-02-19 15:20
  **/

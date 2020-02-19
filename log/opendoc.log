@@ -150,3 +150,6 @@
 2020-02-19 17:08:19.558 - INFO  [nio-8080-exec-1] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
 2020-02-19 17:08:19.927 - INFO  [nio-8080-exec-1] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
 2020-02-19 17:08:23.846 - INFO  [nio-8080-exec-2] i.s.s.i.UserServiceImpl        : 根据SwaggerId查询用户信息
+2020-02-19 17:46:37.650 - INFO  [extShutdownHook] c.ExecutorConfigurationSupport : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-19 17:46:37.654 - INFO  [extShutdownHook] c.z.h.HikariDataSource         : HikariPool-1 - Shutdown initiated...
+2020-02-19 17:46:37.667 - INFO  [extShutdownHook] c.z.h.HikariDataSource         : HikariPool-1 - Shutdown completed.

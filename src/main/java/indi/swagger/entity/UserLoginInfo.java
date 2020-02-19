@@ -29,10 +29,6 @@ public class UserLoginInfo {
         return loginId;
     }
 
-    public void setLoginId(int loginId) {
-        this.loginId = loginId;
-    }
-
     public String getLoginIp() {
         return loginIp;
     }
