@@ -25,4 +25,8 @@
         <include refid="selectUser"></include>
         where user_swagger_id=#{swaggerId}
     </select>
+    <select id="selectUserById" resultType="indi.swagger.entity.UserProfile" parameterType="int">
+        <include refid="selectUser"></include>
+        where user_id=#{userId}
+    </select>
 </mapper>

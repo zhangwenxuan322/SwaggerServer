@@ -1,6 +1,16 @@
 package indi.swagger.controller;
 
+import indi.swagger.entity.VerCode;
+import indi.swagger.service.VerCodeService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @program: Swagger
@@ -10,4 +20,27 @@ import org.springframework.web.bind.annotation.RestController;
  **/
 @RestController
 public class VerCodeController {
+    Logger logger = LoggerFactory.getLogger(VerCodeController.class);
+    @Autowired
+    VerCodeService verCodeService;
+
+    /**
+     * 发送短信验证码
+     * @param codeUserId
+     * @return
+     */
+    @PostMapping("code")
+    public Map<String, Object> postCode(@RequestParam("code_user_id") int codeUserId) {
+        logger.info("用户id：" + codeUserId +"调用模拟短信服务");
+        VerCode verCode = verCodeService.createVerCode(codeUserId);
+        Map<String, Object> map = new HashMap<>();
+        if (verCode == null) {
+            map.put("code", 404);
+            map.put("ver_code", null);
+        }else {
+            map.put("code", 200);
+            map.put("ver_code", verCode);
+        }
+        return map;
+    }
 }

@@ -1,10 +1,16 @@
 package indi.swagger.service;
 
-import org.springframework.stereotype.Service;
+import indi.swagger.entity.VerCode;
 
 /**
  * 验证码服务接口
  */
-@Service
 public interface VerCodeService {
+
+    /**
+     * 根据用户id生成验证码
+     * @param codeUserId
+     * @return
+     */
+    VerCode createVerCode(int codeUserId);
 }

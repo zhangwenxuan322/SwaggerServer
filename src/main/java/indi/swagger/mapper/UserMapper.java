@@ -22,4 +22,11 @@ public interface UserMapper {
      * @return
      */
     UserProfile selectUserBySwaggerId(String swaggerId);
+
+    /**
+     * 根据id查询用户信息
+     * @param userId
+     * @return
+     */
+    UserProfile selectUserById(int userId);
 }

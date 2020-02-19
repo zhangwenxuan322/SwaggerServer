@@ -1,0 +1,18 @@
+2020-02-19 22:56:55.775 -ERROR  [           main] LoggingFailureAnalysisReporter : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field verCodeService in indi.swagger.controller.VerCodeController required a bean of type 'indi.swagger.service.VerCodeService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'indi.swagger.service.VerCodeService' in your configuration.
+
