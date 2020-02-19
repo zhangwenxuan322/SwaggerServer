@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04d8deb3-5c20-4b57-84bc-4daefdff3bb9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/indi/swagger/controller/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/indi/swagger/entity/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/indi/swagger/mapper/TestMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/indi/swagger/service/TestService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/indi/swagger/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/testMapper.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +150,7 @@
       <workItem from="1580712052824" duration="8615000" />
       <workItem from="1581315709342" duration="7989000" />
       <workItem from="1581916674193" duration="9037000" />
-      <workItem from="1582085794804" duration="7783000" />
+      <workItem from="1582085794804" duration="8346000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交">
       <created>1582095517171</created>
@@ -159,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582096092566</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="删除HELP.md">
+      <created>1582096489085</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1582096489085</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,7 +182,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="首次提交" />
     <MESSAGE value="新增了README" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增了README" />
+    <MESSAGE value="删除HELP.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除HELP.md" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1093" y="453" key="#com.intellij.ide.util.MemberChooser" timestamp="1582091409891">
@@ -179,10 +194,10 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1018" y="484" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1580741276494" />
-    <state x="783" y="239" key="CommitChangelistDialog2" timestamp="1582096092380">
+    <state x="783" y="239" key="CommitChangelistDialog2" timestamp="1582096488816">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state x="783" y="239" key="CommitChangelistDialog2/0.23.2560.1417@0.23.2560.1417" timestamp="1582096092380" />
+    <state x="783" y="239" key="CommitChangelistDialog2/0.23.2560.1417@0.23.2560.1417" timestamp="1582096488816" />
     <state width="2560" height="301" key="GridCell.Tab.0.bottom" timestamp="1582095731231">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
@@ -219,10 +234,10 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="768" y="312" key="SettingsEditor/0.23.2560.1417@0.23.2560.1417" timestamp="1582095428068" />
-    <state x="880" y="466" key="Vcs.Push.Dialog.v2" timestamp="1582096103270">
+    <state x="880" y="466" key="Vcs.Push.Dialog.v2" timestamp="1582096695474">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state x="880" y="466" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1582096103270" />
+    <state x="880" y="466" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1582096695474" />
     <state x="945" y="348" width="670" height="676" key="search.everywhere.popup" timestamp="1582089552501">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
