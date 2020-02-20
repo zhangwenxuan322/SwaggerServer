@@ -12,5 +12,5 @@ public interface VerCodeService {
      * @param codeUserId
      * @return
      */
-    VerCode createVerCode(int codeUserId);
+    VerCode createVerCode(String codePhone);
 }

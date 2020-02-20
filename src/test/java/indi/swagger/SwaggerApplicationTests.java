@@ -5,6 +5,7 @@ import indi.swagger.entity.VerCode;
 import indi.swagger.mapper.UserMapper;
 import indi.swagger.mapper.VerCodeMapper;
 import indi.swagger.service.UserService;
+import indi.swagger.service.VerCodeService;
 import indi.swagger.util.EncryptionUtil;
 import indi.swagger.util.SystemUtil;
 import org.junit.jupiter.api.Test;
@@ -23,6 +24,8 @@ class SwaggerApplicationTests {
     Logger logger = LoggerFactory.getLogger(SwaggerApplicationTests.class);
     @Autowired
     UserService userService;
+    @Autowired
+    VerCodeService verCodeService;
     @Autowired
     VerCodeMapper verCodeMapper;
     @Test
@@ -49,17 +52,15 @@ class SwaggerApplicationTests {
 
     @Test
     public void insertCodeTest() {
-        VerCode verCode = new VerCode(1, SystemUtil.generateCodeWith(6), new Date());
-        verCodeMapper.insertCode(verCode);
-        logger.info("新增短信验证码-->" + verCode.getCodeValue());
+        VerCode verCode = verCodeService.createVerCode("1887415157");
     }
 
     @Test
-    public void selectCodeByValueAndUserTest() {
+    public void selectCodeByValueAndPhoneTest() {
         Map<String, Object> map = new HashMap<>();
-        map.put("codeUserId", 1);
-        map.put("codeValue", "243521");
-        VerCode verCode = verCodeMapper.selectCodeByValueAndUser(map);
+        map.put("codePhone", "13813968440");
+        map.put("codeValue", "212630");
+        VerCode verCode = verCodeMapper.selectCodeByValueAndPhone(map).get(0);
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String dateString = formatter.format(verCode.getCodeCreateTime());
         logger.info("验证码创建时间-->" + dateString);

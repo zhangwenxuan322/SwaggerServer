@@ -26,13 +26,13 @@ public class VerCodeController {
 
     /**
      * 发送短信验证码
-     * @param codeUserId
+     * @param codePhone
      * @return
      */
     @PostMapping("code")
-    public Map<String, Object> postCode(@RequestParam("code_user_id") int codeUserId) {
-        logger.info("用户id：" + codeUserId +"调用模拟短信服务");
-        VerCode verCode = verCodeService.createVerCode(codeUserId);
+    public Map<String, Object> postCode(@RequestParam("code_phone") String codePhone) {
+        logger.info("手机号：" + codePhone +"调用模拟短信服务");
+        VerCode verCode = verCodeService.createVerCode(codePhone);
         Map<String, Object> map = new HashMap<>();
         if (verCode == null) {
             map.put("code", 404);

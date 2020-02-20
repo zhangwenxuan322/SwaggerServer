@@ -33,15 +33,15 @@ public class VerCodeServiceImpl implements VerCodeService {
 
     @Transactional
     @Override
-    public VerCode createVerCode(int codeUserId) {
+    public VerCode createVerCode(String codePhone) {
         logger.info("创建短信验证码");
-        UserProfile userProfile = userMapper.selectUserById(codeUserId);
-        if (userProfile == null) {
-            logger.info("不存在id为" + codeUserId + "的用户！");
+        Boolean isMobile = SystemUtil.isMobileNO(codePhone);
+        if (!isMobile) {
+            logger.info("手机号" + codePhone + "有误");
             return null;
         } else {
             // 生成验证码
-            VerCode verCode = new VerCode(codeUserId, SystemUtil.generateCodeWith(codeLength), new Date());
+            VerCode verCode = new VerCode(codePhone, SystemUtil.generateCodeWith(codeLength), new Date());
             verCodeMapper.insertCode(verCode);
             logger.info("验证码创建成功：" + verCode.toString());
             return verCode;

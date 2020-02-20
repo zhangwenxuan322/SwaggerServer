@@ -10,15 +10,15 @@ import java.util.Date;
  **/
 public class VerCode {
     private int codeId;
-    private int codeUserId;
+    private String codePhone;
     private String codeValue;
     private Date codeCreateTime;
 
     public VerCode() {
     }
 
-    public VerCode(int codeUserId, String codeValue, Date codeCreateTime) {
-        this.codeUserId = codeUserId;
+    public VerCode(String codePhone, String codeValue, Date codeCreateTime) {
+        this.codePhone = codePhone;
         this.codeValue = codeValue;
         this.codeCreateTime = codeCreateTime;
     }
@@ -27,12 +27,12 @@ public class VerCode {
         return codeId;
     }
 
-    public int getCodeUserId() {
-        return codeUserId;
+    public String getCodePhone() {
+        return codePhone;
     }
 
-    public void setCodeUserId(int codeUserId) {
-        this.codeUserId = codeUserId;
+    public void setCodePhone(String codePhone) {
+        this.codePhone = codePhone;
     }
 
     public String getCodeValue() {
@@ -55,7 +55,7 @@ public class VerCode {
     public String toString() {
         return "VerCode{" +
                 "codeId=" + codeId +
-                ", codeUserId=" + codeUserId +
+                ", codePhone='" + codePhone + '\'' +
                 ", codeValue='" + codeValue + '\'' +
                 ", codeCreateTime=" + codeCreateTime +
                 '}';

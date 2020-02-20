@@ -3,6 +3,7 @@ package indi.swagger.mapper;
 import indi.swagger.entity.VerCode;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -20,5 +21,5 @@ public interface VerCodeMapper {
      * 根据验证码值和请求用户查找验证码
      * @param map
      */
-    VerCode selectCodeByValueAndUser(Map<String, Object> map);
+    List<VerCode> selectCodeByValueAndPhone(Map<String, Object> map);
 }

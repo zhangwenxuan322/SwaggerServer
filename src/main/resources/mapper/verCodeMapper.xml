@@ -3,17 +3,17 @@
 <mapper namespace="indi.swagger.mapper.VerCodeMapper">
 
     <insert id="insertCode" parameterType="indi.swagger.entity.VerCode">
-        insert into t_ver_code(code_user_id, code_value, code_create_time)
-        values (#{codeUserId}, #{codeValue}, #{codeCreateTime})
+        insert into t_ver_code(code_phone, code_value, code_create_time)
+        values (#{codePhone}, #{codeValue}, #{codeCreateTime})
     </insert>
 
-    <select id="selectCodeByValueAndUser" parameterType="map" resultType="indi.swagger.entity.VerCode">
+    <select id="selectCodeByValueAndPhone" parameterType="map" resultType="indi.swagger.entity.VerCode">
         select code_id as codeId,
-               code_user_id as codeUserId,
+               code_phone as codePhone,
                code_value as codeValue,
                code_create_time as codeCreateTime
           from t_ver_code
-         where code_user_id=#{codeUserId}
+         where code_phone=#{codePhone}
            and code_value=#{codeValue}
          order by code_id
           desc
