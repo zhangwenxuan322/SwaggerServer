@@ -37,6 +37,10 @@ public class UserProfile {
         this.userLoginInfoId = userLoginInfoId;
     }
 
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
     public int getUserId() {
         return userId;
     }
@@ -127,7 +131,6 @@ public class UserProfile {
                 "userId=" + userId +
                 ", userName='" + userName + '\'' +
                 ", userSex='" + userSex + '\'' +
-                ", userPassword='" + userPassword + '\'' +
                 ", userPhone='" + userPhone + '\'' +
                 ", userSwaggerId='" + userSwaggerId + '\'' +
                 ", userPortrait='" + userPortrait + '\'' +

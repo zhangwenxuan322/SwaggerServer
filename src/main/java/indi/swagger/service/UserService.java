@@ -1,6 +1,7 @@
 package indi.swagger.service;
 
 import indi.swagger.entity.UserProfile;
+import io.rong.models.response.TokenResult;
 
 /**
  * 用户服务接口
@@ -19,4 +20,11 @@ public interface UserService {
      * @return
      */
     UserProfile selectUserBySwaggerId(String swaggerId);
+
+    /**
+     * 注册用户
+     * @param userProfile
+     * @return
+     */
+    TokenResult registerUser(UserProfile userProfile);
 }

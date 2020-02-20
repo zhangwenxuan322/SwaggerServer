@@ -2,12 +2,11 @@ package indi.swagger.controller;
 
 import indi.swagger.entity.UserProfile;
 import indi.swagger.service.UserService;
+import io.rong.models.response.TokenResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -61,6 +60,35 @@ public class UserController {
             map.put("code", 200);
             map.put("user_profile", userProfile);
         }
+        return map;
+    }
+
+    /**
+     * 注册用户
+     * @return
+     */
+    @PostMapping("user")
+    public Map<String, Object> postUser(@RequestBody UserProfile userProfile) {
+        Map<String, Object> map = new HashMap<>();
+        // 请求参数有误
+        if (userProfile == null) {
+            map.put("code", 406);
+            map.put("state", "not_acceptable");
+            return map;
+        }
+        // 判断用户是否存在
+        if (userService.selectUserByPhone(userProfile.getUserPhone()) != null
+                || userService.selectUserBySwaggerId(userProfile.getUserSwaggerId()) != null) {
+            map.put("code", 415);
+            map.put("state", "user_exist");
+            return map;
+        }
+        // 调用注册服务
+        logger.info("调用用户注册服务");
+        TokenResult result = userService.registerUser(userProfile);
+        map.put("code", result.getCode());
+        map.put("user_id", result.getUserId());
+        map.put("error_message", result.getErrorMessage());
         return map;
     }
 }

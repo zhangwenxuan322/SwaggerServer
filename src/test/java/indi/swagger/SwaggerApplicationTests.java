@@ -1,5 +1,6 @@
 package indi.swagger;
 
+import indi.swagger.entity.UserLoginInfo;
 import indi.swagger.entity.UserProfile;
 import indi.swagger.entity.VerCode;
 import indi.swagger.mapper.UserMapper;
@@ -8,6 +9,7 @@ import indi.swagger.service.UserService;
 import indi.swagger.service.VerCodeService;
 import indi.swagger.util.EncryptionUtil;
 import indi.swagger.util.SystemUtil;
+import io.rong.models.response.TokenResult;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,6 +30,8 @@ class SwaggerApplicationTests {
     VerCodeService verCodeService;
     @Autowired
     VerCodeMapper verCodeMapper;
+    @Autowired
+    UserMapper userMapper;
     @Test
     void contextLoads() {
     }
@@ -70,5 +74,38 @@ class SwaggerApplicationTests {
     public void generateCodeTest() {
         String code = SystemUtil.generateCodeWith(4);
         logger.info("code:" + code);
+    }
+
+    @Test
+    public void insertUserTest() {
+        UserProfile userProfile = new UserProfile("friend", "男", "123", "13851567613", "", "", "life~", new Date(), null, 2);
+        userMapper.insertUser(userProfile);
+    }
+
+    @Test
+    public void insertUserLoginInfoTest() {
+        UserLoginInfo userLoginInfo = new UserLoginInfo("127.0.0.1", "江苏南京", new Date(), 0, 1);
+        userMapper.insertUserLoginInfo(userLoginInfo);
+    }
+
+    @Test
+    public void selectLoginInfoByUserIdTest() {
+        int loginId = userMapper.selectLoginInfoByUserId(1);
+        logger.info(String.valueOf(loginId));
+    }
+
+    @Test
+    public void updateUserByIdTest() {
+        UserProfile userProfile = new UserProfile();
+        userProfile.setUserId(1);
+        userProfile.setUserLoginInfoId(1);
+        userMapper.updateUserById(userProfile);
+    }
+
+    @Test
+    public void registerUserTest() {
+        UserProfile userProfile = new UserProfile("张建", "男", "123", "13770625437", "", "test.png", "嘿嘿", new Date(), null, 0);
+        TokenResult result = userService.registerUser(userProfile);
+        System.out.println(result);
     }
 }

@@ -3,15 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="04d8deb3-5c20-4b57-84bc-4daefdff3bb9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/exception/opendoc_exception.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/exception/opendoc_exception.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/opendoc.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/opendoc.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/indi/swagger/controller/VerCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/controller/VerCodeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/indi/swagger/entity/VerCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/entity/VerCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/indi/swagger/mapper/VerCodeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/mapper/VerCodeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/indi/swagger/service/VerCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/service/VerCodeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/indi/swagger/service/impl/VerCodeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/service/impl/VerCodeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/indi/swagger/util/SystemUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/util/SystemUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/verCodeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/verCodeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/indi/swagger/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/indi/swagger/entity/UserLoginInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/entity/UserLoginInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/indi/swagger/entity/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/entity/UserProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/indi/swagger/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/indi/swagger/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/indi/swagger/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/indi/swagger/SwaggerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/indi/swagger/SwaggerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/indi/swagger/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/indi/swagger/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/indi/swagger/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/indi/swagger/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/indi/swagger/SwaggerApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/indi/swagger/SwaggerApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +68,7 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RunManager" selected="Spring Boot.SwaggerApplication">
-    <configuration name="SwaggerApplicationTests.generateCodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SwaggerApplicationTests.insertUserLoginInfoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Swagger" />
       <extension name="coverage">
         <pattern>
@@ -74,13 +78,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="indi.swagger" />
       <option name="MAIN_CLASS_NAME" value="indi.swagger.SwaggerApplicationTests" />
-      <option name="METHOD_NAME" value="generateCodeTest" />
+      <option name="METHOD_NAME" value="insertUserLoginInfoTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SwaggerApplicationTests.insertCodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SwaggerApplicationTests.insertUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Swagger" />
       <extension name="coverage">
         <pattern>
@@ -90,13 +94,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="indi.swagger" />
       <option name="MAIN_CLASS_NAME" value="indi.swagger.SwaggerApplicationTests" />
-      <option name="METHOD_NAME" value="insertCodeTest" />
+      <option name="METHOD_NAME" value="insertUserTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SwaggerApplicationTests.selectCodeByValueAndPhoneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SwaggerApplicationTests.registerUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Swagger" />
       <extension name="coverage">
         <pattern>
@@ -106,13 +110,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="indi.swagger" />
       <option name="MAIN_CLASS_NAME" value="indi.swagger.SwaggerApplicationTests" />
-      <option name="METHOD_NAME" value="selectCodeByValueAndPhoneTest" />
+      <option name="METHOD_NAME" value="registerUserTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SwaggerApplicationTests.selectCodeByValueAndUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SwaggerApplicationTests.selectLoginInfoByUserIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Swagger" />
       <extension name="coverage">
         <pattern>
@@ -122,13 +126,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="indi.swagger" />
       <option name="MAIN_CLASS_NAME" value="indi.swagger.SwaggerApplicationTests" />
-      <option name="METHOD_NAME" value="selectCodeByValueAndUserTest" />
+      <option name="METHOD_NAME" value="selectLoginInfoByUserIdTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SwaggerApplicationTests.selectUserBySwaggerIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SwaggerApplicationTests.updateUserByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Swagger" />
       <extension name="coverage">
         <pattern>
@@ -138,7 +142,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="indi.swagger" />
       <option name="MAIN_CLASS_NAME" value="indi.swagger.SwaggerApplicationTests" />
-      <option name="METHOD_NAME" value="selectUserBySwaggerIdTest" />
+      <option name="METHOD_NAME" value="updateUserByIdTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -153,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SwaggerApplicationTests.selectCodeByValueAndPhoneTest" />
-        <item itemvalue="JUnit.SwaggerApplicationTests.insertCodeTest" />
-        <item itemvalue="JUnit.SwaggerApplicationTests.generateCodeTest" />
-        <item itemvalue="JUnit.SwaggerApplicationTests.selectCodeByValueAndUserTest" />
-        <item itemvalue="JUnit.SwaggerApplicationTests.selectUserBySwaggerIdTest" />
+        <item itemvalue="JUnit.SwaggerApplicationTests.registerUserTest" />
+        <item itemvalue="JUnit.SwaggerApplicationTests.updateUserByIdTest" />
+        <item itemvalue="JUnit.SwaggerApplicationTests.selectLoginInfoByUserIdTest" />
+        <item itemvalue="JUnit.SwaggerApplicationTests.insertUserLoginInfoTest" />
+        <item itemvalue="JUnit.SwaggerApplicationTests.insertUserTest" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +191,7 @@
       <workItem from="1581315709342" duration="7989000" />
       <workItem from="1581916674193" duration="9037000" />
       <workItem from="1582085794804" duration="18127000" />
-      <workItem from="1582168694999" duration="2118000" />
+      <workItem from="1582168694999" duration="14771000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交">
       <created>1582095517171</created>
@@ -245,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582124875434</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="加入手机号合法性验证">
+      <created>1582173295913</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1582173295913</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,53 +302,54 @@
     <MESSAGE value="加入手机短信验证码模拟模块" />
     <MESSAGE value="删除用户id的set方法" />
     <MESSAGE value="完成创建短信验证码的API" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成创建短信验证码的API" />
+    <MESSAGE value="加入手机号合法性验证" />
+    <option name="LAST_COMMIT_MESSAGE" value="加入手机号合法性验证" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1093" y="453" key="#com.intellij.ide.util.MemberChooser" timestamp="1582170859159">
+    <state x="1093" y="453" key="#com.intellij.ide.util.MemberChooser" timestamp="1582208803543">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state x="1093" y="453" key="#com.intellij.ide.util.MemberChooser/0.23.2560.1417@0.23.2560.1417" timestamp="1582170859159" />
+    <state x="1093" y="453" key="#com.intellij.ide.util.MemberChooser/0.23.2560.1417@0.23.2560.1417" timestamp="1582208803543" />
     <state x="1018" y="484" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580741276494">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1018" y="484" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1580741276494" />
-    <state x="783" y="239" key="CommitChangelistDialog2" timestamp="1582124874965">
+    <state x="783" y="239" key="CommitChangelistDialog2" timestamp="1582173295367">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state x="783" y="239" key="CommitChangelistDialog2/0.23.2560.1417@0.23.2560.1417" timestamp="1582124874965" />
-    <state width="2560" height="301" key="GridCell.Tab.0.bottom" timestamp="1582171441963">
+    <state x="783" y="239" key="CommitChangelistDialog2/0.23.2560.1417@0.23.2560.1417" timestamp="1582173295367" />
+    <state width="2560" height="301" key="GridCell.Tab.0.bottom" timestamp="1582211418499">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2560" height="301" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1582171441963" />
-    <state width="2560" height="301" key="GridCell.Tab.0.center" timestamp="1582171441962">
+    <state width="2560" height="301" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1582211418499" />
+    <state width="2560" height="301" key="GridCell.Tab.0.center" timestamp="1582211418498">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2560" height="301" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1582171441962" />
-    <state width="2560" height="301" key="GridCell.Tab.0.left" timestamp="1582171441961">
+    <state width="2560" height="301" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1582211418498" />
+    <state width="2560" height="301" key="GridCell.Tab.0.left" timestamp="1582211418497">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2560" height="301" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1582171441961" />
-    <state width="2560" height="301" key="GridCell.Tab.0.right" timestamp="1582171441962">
+    <state width="2560" height="301" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1582211418497" />
+    <state width="2560" height="301" key="GridCell.Tab.0.right" timestamp="1582211418499">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2560" height="301" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1582171441962" />
-    <state width="2560" height="301" key="GridCell.Tab.1.bottom" timestamp="1582125085580">
+    <state width="2560" height="301" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1582211418499" />
+    <state width="2560" height="301" key="GridCell.Tab.1.bottom" timestamp="1582211418494">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2560" height="301" key="GridCell.Tab.1.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1582125085580" />
-    <state width="2560" height="301" key="GridCell.Tab.1.center" timestamp="1582125085579">
+    <state width="2560" height="301" key="GridCell.Tab.1.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1582211418494" />
+    <state width="2560" height="301" key="GridCell.Tab.1.center" timestamp="1582211418493">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2560" height="301" key="GridCell.Tab.1.center/0.23.2560.1417@0.23.2560.1417" timestamp="1582125085579" />
-    <state width="2560" height="301" key="GridCell.Tab.1.left" timestamp="1582125085579">
+    <state width="2560" height="301" key="GridCell.Tab.1.center/0.23.2560.1417@0.23.2560.1417" timestamp="1582211418493" />
+    <state width="2560" height="301" key="GridCell.Tab.1.left" timestamp="1582211418493">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2560" height="301" key="GridCell.Tab.1.left/0.23.2560.1417@0.23.2560.1417" timestamp="1582125085579" />
-    <state width="2560" height="301" key="GridCell.Tab.1.right" timestamp="1582125085579">
+    <state width="2560" height="301" key="GridCell.Tab.1.left/0.23.2560.1417@0.23.2560.1417" timestamp="1582211418493" />
+    <state width="2560" height="301" key="GridCell.Tab.1.right" timestamp="1582211418493">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2560" height="301" key="GridCell.Tab.1.right/0.23.2560.1417@0.23.2560.1417" timestamp="1582125085579" />
+    <state width="2560" height="301" key="GridCell.Tab.1.right/0.23.2560.1417@0.23.2560.1417" timestamp="1582211418493" />
     <state x="768" y="312" key="SettingsEditor" timestamp="1582095428068">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>

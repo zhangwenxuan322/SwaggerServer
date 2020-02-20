@@ -14,15 +14,17 @@ public class UserLoginInfo {
     private String loginPlace;
     private Date loginTime;
     private int isLogout;
+    private int loginUserId;
 
     public UserLoginInfo() {
     }
 
-    public UserLoginInfo(String loginIp, String loginPlace, Date loginTime, int isLogout) {
+    public UserLoginInfo(String loginIp, String loginPlace, Date loginTime, int isLogout, int loginUserId) {
         this.loginIp = loginIp;
         this.loginPlace = loginPlace;
         this.loginTime = loginTime;
         this.isLogout = isLogout;
+        this.loginUserId = loginUserId;
     }
 
     public int getLoginId() {
@@ -61,6 +63,14 @@ public class UserLoginInfo {
         this.isLogout = isLogout;
     }
 
+    public int getLoginUserId() {
+        return loginUserId;
+    }
+
+    public void setLoginUserId(int loginUserId) {
+        this.loginUserId = loginUserId;
+    }
+
     @Override
     public String toString() {
         return "UserLoginInfo{" +
@@ -69,6 +79,7 @@ public class UserLoginInfo {
                 ", loginPlace='" + loginPlace + '\'' +
                 ", loginTime=" + loginTime +
                 ", isLogout=" + isLogout +
+                ", loginUserId=" + loginUserId +
                 '}';
     }
 }
