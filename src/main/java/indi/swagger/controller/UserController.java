@@ -68,7 +68,7 @@ public class UserController {
      * @return
      */
     @PostMapping("user")
-    public Map<String, Object> postUser(@RequestBody UserProfile userProfile) {
+    public Map<String, Object> postUser(@RequestBody UserProfile userProfile) throws Exception {
         Map<String, Object> map = new HashMap<>();
         // 请求参数有误
         if (userProfile == null) {
@@ -88,6 +88,7 @@ public class UserController {
         TokenResult result = userService.registerUser(userProfile);
         map.put("code", result.getCode());
         map.put("user_id", result.getUserId());
+        map.put("token", result.getToken());
         map.put("error_message", result.getErrorMessage());
         return map;
     }

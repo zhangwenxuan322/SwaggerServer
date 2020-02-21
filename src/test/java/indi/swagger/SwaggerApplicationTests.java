@@ -103,9 +103,15 @@ class SwaggerApplicationTests {
     }
 
     @Test
-    public void registerUserTest() {
+    public void registerUserTest() throws Exception {
         UserProfile userProfile = new UserProfile("张建", "男", "123", "13770625437", "", "test.png", "嘿嘿", new Date(), null, 0);
         TokenResult result = userService.registerUser(userProfile);
         System.out.println(result);
+    }
+
+    @Test
+    public void tokenLengthTest() {
+        String token = "rfvKdLy+SGCw2HgjQQjy3vRAIsOQWErBebWt660uOIMgyrAQwEhBhasXu0F5hgszHQ5f2NzlIwKAdjq/QVTe1Lts7WhchtLQ";
+        System.out.println(token.length());
     }
 }

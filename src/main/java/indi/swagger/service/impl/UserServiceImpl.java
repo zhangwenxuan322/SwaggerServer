@@ -43,7 +43,7 @@ public class UserServiceImpl implements UserService {
 
     @Transactional
     @Override
-    public TokenResult registerUser(UserProfile userProfile) {
+    public TokenResult registerUser(UserProfile userProfile) throws Exception {
         logger.info("开始用户注册服务，注册用户：" + userProfile.toString());
         // 创建Swagger账户
         // 密码加密
@@ -62,20 +62,16 @@ public class UserServiceImpl implements UserService {
         userMapper.insertUserLoginInfo(userLoginInfo);
         int loginId = userMapper.selectLoginInfoByUserId(userProfile.getUserId());
         userProfile.setUserLoginInfoId(loginId);
-        userMapper.updateUserById(userProfile);
-        logger.info("完成Swagger账户创建");
         // 创建融云账户
         User user = rongCloud.user;
         UserModel userModel = new UserModel()
                 .setId(String.valueOf(userProfile.getUserId()))
                 .setName(userProfile.getUserName())
                 .setPortrait(userProfile.getUserPortrait());
-        TokenResult result = null;
-        try {
-            result = user.register(userModel);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        TokenResult result = user.register(userModel);
+        userProfile.setUserToken(result.getToken());
+        userMapper.updateUserById(userProfile);
+        logger.info("完成Swagger账户创建");
         logger.info("完成融云账户创建");
         return result;
     }

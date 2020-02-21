@@ -26,5 +26,5 @@ public interface UserService {
      * @param userProfile
      * @return
      */
-    TokenResult registerUser(UserProfile userProfile);
+    TokenResult registerUser(UserProfile userProfile) throws Exception;
 }

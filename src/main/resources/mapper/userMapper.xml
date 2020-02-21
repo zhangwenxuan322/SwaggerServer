@@ -13,7 +13,8 @@
                user_bio as userBio,
                user_create_time as userCreateTime,
                user_modify_time as userModifyTime,
-               user_login_info_id as userLoginInfoId
+               user_login_info_id as userLoginInfoId,
+               user_token as userToken
           from t_user_profile
     </sql>
 
@@ -48,7 +49,8 @@
 
     <update id="updateUserById" parameterType="indi.swagger.entity.UserProfile">
         update t_user_profile
-           set user_login_info_id=#{userLoginInfoId}
+           set user_login_info_id=#{userLoginInfoId},
+               user_token=#{userToken}
          where user_id=#{userId}
     </update>
 

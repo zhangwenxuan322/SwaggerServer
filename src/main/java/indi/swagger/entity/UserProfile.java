@@ -20,6 +20,7 @@ public class UserProfile {
     private Date userCreateTime;
     private Date userModifyTime;
     private int userLoginInfoId;
+    private String userToken;
 
     public UserProfile() {
     }
@@ -125,12 +126,21 @@ public class UserProfile {
         this.userLoginInfoId = userLoginInfoId;
     }
 
+    public String getUserToken() {
+        return userToken;
+    }
+
+    public void setUserToken(String userToken) {
+        this.userToken = userToken;
+    }
+
     @Override
     public String toString() {
         return "UserProfile{" +
                 "userId=" + userId +
                 ", userName='" + userName + '\'' +
                 ", userSex='" + userSex + '\'' +
+                ", userPassword='" + userPassword + '\'' +
                 ", userPhone='" + userPhone + '\'' +
                 ", userSwaggerId='" + userSwaggerId + '\'' +
                 ", userPortrait='" + userPortrait + '\'' +
@@ -138,6 +148,7 @@ public class UserProfile {
                 ", userCreateTime=" + userCreateTime +
                 ", userModifyTime=" + userModifyTime +
                 ", userLoginInfoId=" + userLoginInfoId +
+                ", userToken='" + userToken + '\'' +
                 '}';
     }
 }
