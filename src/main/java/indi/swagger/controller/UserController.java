@@ -29,18 +29,9 @@ public class UserController {
      * @return
      */
     @GetMapping("user/phone/{phone}")
-    public Map<String, Object> getUserByPhone(@PathVariable(value = "phone") String phone) {
+    public UserProfile getUserByPhone(@PathVariable(value = "phone") String phone) {
         logger.info("调用手机号查询用户信息服务");
-        UserProfile userProfile = userService.selectUserByPhone(phone);
-        Map<String, Object> map = new HashMap<>();
-        if (userProfile == null) {
-            map.put("code", 404);
-            map.put("use_profile", null);
-        }else {
-            map.put("code", 200);
-            map.put("user_profile", userProfile);
-        }
-        return map;
+        return userService.selectUserByPhone(phone);
     }
 
     /**
@@ -49,22 +40,13 @@ public class UserController {
      * @return
      */
     @GetMapping("user/swagger_id/{swaggerId}")
-    public Map<String, Object> gerUserBySwaggerId(@PathVariable(value = "swaggerId") String swaggerId) {
+    public UserProfile gerUserBySwaggerId(@PathVariable(value = "swaggerId") String swaggerId) {
         logger.info("调用SwaggerId查询用户信息服务");
-        UserProfile userProfile = userService.selectUserBySwaggerId(swaggerId);
-        Map<String, Object> map = new HashMap<>();
-        if (userProfile == null) {
-            map.put("code", 404);
-            map.put("use_profile", null);
-        }else {
-            map.put("code", 200);
-            map.put("user_profile", userProfile);
-        }
-        return map;
+        return userService.selectUserBySwaggerId(swaggerId);
     }
 
     /**
-     * 注册用户
+     * 用户注册
      * @return
      */
     @PostMapping("user")
@@ -92,4 +74,5 @@ public class UserController {
         map.put("error_message", result.getErrorMessage());
         return map;
     }
+
 }

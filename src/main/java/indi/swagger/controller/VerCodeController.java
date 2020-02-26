@@ -35,10 +35,8 @@ public class VerCodeController {
         VerCode verCode = verCodeService.createVerCode(codePhone);
         Map<String, Object> map = new HashMap<>();
         if (verCode == null) {
-            map.put("code", 404);
             map.put("ver_code", null);
         }else {
-            map.put("code", 200);
             map.put("ver_code", verCode);
         }
         return map;

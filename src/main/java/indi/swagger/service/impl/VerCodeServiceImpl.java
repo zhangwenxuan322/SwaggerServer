@@ -13,6 +13,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @program: Swagger
@@ -43,6 +45,10 @@ public class VerCodeServiceImpl implements VerCodeService {
             // 生成验证码
             VerCode verCode = new VerCode(codePhone, SystemUtil.generateCodeWith(codeLength), new Date());
             verCodeMapper.insertCode(verCode);
+            Map<String, Object> map = new HashMap<>();
+            map.put("codePhone", verCode.getCodePhone());
+            map.put("codeValue", verCode.getCodeValue());
+            verCode = verCodeMapper.selectCodeByValueAndPhone(map).get(0);
             logger.info("验证码创建成功：" + verCode.toString());
             return verCode;
         }

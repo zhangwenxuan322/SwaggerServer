@@ -16,6 +16,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Date;
+
 /**
  * @program: Swagger
  * @description: 用户服务实现类
@@ -48,12 +50,13 @@ public class UserServiceImpl implements UserService {
         // 创建Swagger账户
         // 密码加密
         userProfile.setUserPassword(EncryptionUtil.SHA256(userProfile.getUserPassword()));
+        userProfile.setUserCreateTime(new Date());
         userMapper.insertUser(userProfile);
         // 判断用户注册的方式
-        if (!userProfile.getUserPhone().equals("")) {
+        if (!"".equals(userProfile.getUserPhone())) {
             // 手机号注册
             userProfile = userMapper.selectUserByPhone(userProfile.getUserPhone());
-        } else {
+        } else if (!"".equals(userProfile.getUserSwaggerId())){
             // SwaggerId注册
             userProfile = userMapper.selectUserBySwaggerId(userProfile.getUserSwaggerId());
         }
