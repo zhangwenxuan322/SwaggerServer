@@ -59,14 +59,14 @@ public class UserController {
         Map<String, Object> map = new HashMap<>();
         // 请求参数有误
         if (userProfile == null) {
-            map.put("code", 406);
+            map.put("code", "406");
             map.put("state", "not_acceptable");
             return map;
         }
         // 判断用户是否存在
         if (userService.selectUserByPhone(userProfile.getUserPhone()) != null
                 || userService.selectUserBySwaggerId(userProfile.getUserSwaggerId()) != null) {
-            map.put("code", 415);
+            map.put("code", "415");
             map.put("state", "user_exist");
             return map;
         }
@@ -93,7 +93,7 @@ public class UserController {
                                          @RequestParam(value = "password") String password) {
         Map<String, Object> map = new HashMap<>();
         if (account == null || password == null) {
-            map.put("code", 404);
+            map.put("code", "404");
             map.put("message", "null_paramaters");
             return map;
         }
@@ -107,7 +107,7 @@ public class UserController {
             userProfile = userService.selectUserBySwaggerId(account);
         }
         if (userProfile == null) {
-            map.put("code", 404);
+            map.put("code", "404");
             map.put("message", "user_not_exist");
             return map;
         }
@@ -115,11 +115,11 @@ public class UserController {
         String encryPwd = EncryptionUtil.SHA256(password);
         if (userProfile.getUserPassword().equals(encryPwd)) {
             // 密码正确
-            map.put("code", 200);
+            map.put("code", "200");
             map.put("token", userProfile.getUserToken());
         } else {
             // 密码错误
-            map.put("code", 404);
+            map.put("code", "404");
             map.put("message", "wrong_password");
         }
         return map;
