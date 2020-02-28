@@ -2,6 +2,8 @@ package indi.swagger.controller;
 
 import indi.swagger.entity.UserProfile;
 import indi.swagger.service.UserService;
+import indi.swagger.util.EncryptionUtil;
+import indi.swagger.util.SystemUtil;
 import io.rong.models.response.TokenResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,6 +27,7 @@ public class UserController {
 
     /**
      * 根据手机号查询用户信息
+     *
      * @param phone
      * @return
      */
@@ -36,6 +39,7 @@ public class UserController {
 
     /**
      * 根据SwaggerId查询用户信息
+     *
      * @param swaggerId
      * @return
      */
@@ -47,6 +51,7 @@ public class UserController {
 
     /**
      * 用户注册
+     *
      * @return
      */
     @PostMapping("user")
@@ -72,6 +77,51 @@ public class UserController {
         map.put("user_id", result.getUserId());
         map.put("token", result.getToken());
         map.put("error_message", result.getErrorMessage());
+        return map;
+    }
+
+
+    /**
+     * 用户登录
+     *
+     * @param account
+     * @param password
+     * @return
+     */
+    @GetMapping("user/auth")
+    public Map<String, Object> userLogin(@RequestParam(value = "account") String account,
+                                         @RequestParam(value = "password") String password) {
+        Map<String, Object> map = new HashMap<>();
+        if (account == null || password == null) {
+            map.put("code", 404);
+            map.put("message", "null_paramaters");
+            return map;
+        }
+        UserProfile userProfile;
+        // 判断登录方式
+        if (SystemUtil.isMobileNO(account)) {
+            // 手机号登录
+            userProfile = userService.selectUserByPhone(account);
+        } else {
+            // SwaggerId登录
+            userProfile = userService.selectUserBySwaggerId(account);
+        }
+        if (userProfile == null) {
+            map.put("code", 404);
+            map.put("message", "user_not_exist");
+            return map;
+        }
+        // 验证密码
+        String encryPwd = EncryptionUtil.SHA256(password);
+        if (userProfile.getUserPassword().equals(encryPwd)) {
+            // 密码正确
+            map.put("code", 200);
+            map.put("token", userProfile.getUserToken());
+        } else {
+            // 密码错误
+            map.put("code", 404);
+            map.put("message", "wrong_password");
+        }
         return map;
     }
 

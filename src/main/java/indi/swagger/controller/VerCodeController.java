@@ -5,9 +5,7 @@ import indi.swagger.service.VerCodeService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -29,16 +27,15 @@ public class VerCodeController {
      * @param codePhone
      * @return
      */
-    @PostMapping("code")
-    public Map<String, Object> postCode(@RequestParam("code_phone") String codePhone) {
+    @GetMapping("code/{phone}")
+    public VerCode postCode(@PathVariable(value = "phone") String codePhone) {
         logger.info("手机号：" + codePhone +"调用模拟短信服务");
         VerCode verCode = verCodeService.createVerCode(codePhone);
         Map<String, Object> map = new HashMap<>();
         if (verCode == null) {
-            map.put("ver_code", null);
+            return null;
         }else {
-            map.put("ver_code", verCode);
+            return verCode;
         }
-        return map;
     }
 }
