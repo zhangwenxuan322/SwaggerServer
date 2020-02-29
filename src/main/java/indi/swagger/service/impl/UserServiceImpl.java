@@ -68,7 +68,7 @@ public class UserServiceImpl implements UserService {
         // 创建融云账户
         User user = rongCloud.user;
         UserModel userModel = new UserModel()
-                .setId(String.valueOf(userProfile.getUserId()))
+                .setId("swaggerid" + String.valueOf(userProfile.getUserId()))
                 .setName(userProfile.getUserName())
                 .setPortrait(userProfile.getUserPortrait());
         TokenResult result = user.register(userModel);
