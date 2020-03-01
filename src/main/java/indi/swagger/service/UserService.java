@@ -27,4 +27,12 @@ public interface UserService {
      * @return
      */
     TokenResult registerUser(UserProfile userProfile) throws Exception;
+
+    /**
+     * 修改用户密码
+     * @param phone
+     * @param password
+     * @return
+     */
+    Boolean upadteUserPassword(String phone, String password);
 }

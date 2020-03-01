@@ -54,6 +54,12 @@
          where user_id=#{userId}
     </update>
 
+    <update id="updateUserPasswordById" parameterType="indi.swagger.entity.UserProfile">
+        update t_user_profile
+           set user_password=#{userPassword}
+         where user_id=#{userId}
+    </update>
+
     <select id="selectUserByPhone" resultType="indi.swagger.entity.UserProfile" parameterType="string">
         <include refid="selectUser"></include>
         where user_phone=#{phone}

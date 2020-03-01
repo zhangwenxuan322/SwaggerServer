@@ -109,6 +109,7 @@ public class UserController {
     @GetMapping("user/auth")
     public Map<String, Object> userLogin(@RequestParam(value = "account") String account,
                                          @RequestParam(value = "password") String password) {
+        logger.info("账号：" + account + "开始登录");
         Map<String, Object> map = new HashMap<>();
         if (account == null || password == null) {
             map.put("code", "404");
@@ -143,4 +144,28 @@ public class UserController {
         return map;
     }
 
+    /**
+     * 修改用户密码
+     *
+     * @param phone
+     * @param password
+     * @return
+     */
+    @PutMapping("user/info")
+    public Map<String, Object> changePassword(@RequestParam String phone, @RequestParam String password) {
+        logger.info("手机号：" + phone + "开始修改密码");
+        Map<String, Object> map = new HashMap<>();
+        logger.info("调用修改密码服务");
+        Boolean status = userService.upadteUserPassword(phone, password);
+        if (status) {
+            map.put("code", "200");
+            map.put("message", "success");
+            logger.info("修改成功");
+        } else {
+            map.put("code", "404");
+            map.put("message", "user_not_exist");
+            logger.info("用不存在，修改失败");
+        }
+        return map;
+    }
 }

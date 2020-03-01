@@ -68,7 +68,7 @@ public class UserServiceImpl implements UserService {
         // 创建融云账户
         User user = rongCloud.user;
         UserModel userModel = new UserModel()
-                .setId("swaggerid" + String.valueOf(userProfile.getUserId()))
+                .setId("swaggertestid" + String.valueOf(userProfile.getUserId())) // TODO:上线后修改
                 .setName(userProfile.getUserName())
                 .setPortrait(userProfile.getUserPortrait());
         TokenResult result = user.register(userModel);
@@ -77,5 +77,20 @@ public class UserServiceImpl implements UserService {
         logger.info("完成Swagger账户创建");
         logger.info("完成融云账户创建");
         return result;
+    }
+
+    @Transactional
+    @Override
+    public Boolean upadteUserPassword(String phone, String password) {
+        logger.info("开始修改密码");
+        UserProfile userProfile = userMapper.selectUserByPhone(phone);
+        if (userProfile == null) {
+            // 用户不存在
+            return false;
+        }
+        // 密码加密
+        userProfile.setUserPassword(EncryptionUtil.SHA256(password));
+        userMapper.updateUserPasswordById(userProfile);
+        return true;
     }
 }

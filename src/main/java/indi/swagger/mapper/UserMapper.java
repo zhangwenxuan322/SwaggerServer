@@ -51,8 +51,14 @@ public interface UserMapper {
     int selectLoginInfoByUserId(int userId);
 
     /**
-     * 根据id更新用户信息
+     * 根据id更新用户登录信息
      * @param userProfile
      */
     void updateUserById(UserProfile userProfile);
+
+    /**
+     * 根据id更新用户密码
+     * @param userProfile
+     */
+    void updateUserPasswordById(UserProfile userProfile);
 }

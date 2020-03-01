@@ -9,7 +9,7 @@ import io.rong.RongCloud;
  * @create: 2020-02-17 13:36
  **/
 public class Constant {
-    public static final String APP_KEY = "app_key";
-    public static final String APP_SECRET = "app_secret";
+    public static final String APP_KEY = "pwe86ga5p9vz6";
+    public static final String APP_SECRET = "f1VfYQbLD0";
     public static final RongCloud RONG_CLOUD = RongCloud.getInstance(APP_KEY, APP_SECRET);
 }
