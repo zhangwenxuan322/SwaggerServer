@@ -1,5 +1,6 @@
 package indi.swagger.service;
 
+import indi.swagger.entity.UserLoginInfo;
 import indi.swagger.entity.UserProfile;
 import io.rong.models.response.TokenResult;
 
@@ -35,4 +36,10 @@ public interface UserService {
      * @return
      */
     Boolean upadteUserPassword(String phone, String password);
+
+    /**
+     * 修改用户登录信息
+     * @param userLoginInfo
+     */
+    void updateUserLoginInfoById(UserLoginInfo userLoginInfo);
 }

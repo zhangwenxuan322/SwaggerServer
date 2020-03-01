@@ -1,5 +1,6 @@
 package indi.swagger.controller;
 
+import indi.swagger.entity.UserLoginInfo;
 import indi.swagger.entity.UserProfile;
 import indi.swagger.service.UserService;
 import indi.swagger.util.EncryptionUtil;
@@ -10,6 +11,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -108,7 +110,9 @@ public class UserController {
      */
     @GetMapping("user/auth")
     public Map<String, Object> userLogin(@RequestParam(value = "account") String account,
-                                         @RequestParam(value = "password") String password) {
+                                         @RequestParam(value = "password") String password,
+                                         @RequestParam(value = "ip") String ip,
+                                         @RequestParam(value = "place") String place) {
         logger.info("账号：" + account + "开始登录");
         Map<String, Object> map = new HashMap<>();
         if (account == null || password == null) {
@@ -136,6 +140,14 @@ public class UserController {
             // 密码正确
             map.put("code", "200");
             map.put("token", userProfile.getUserToken());
+            // 更新用户登录信息表
+            UserLoginInfo userLoginInfo = new UserLoginInfo();
+            userLoginInfo.setLoginIp(ip);
+            userLoginInfo.setLoginPlace(place);
+            userLoginInfo.setLoginTime(new Date());
+            userLoginInfo.setIsLogout(0);
+            userLoginInfo.setLoginId(userProfile.getUserLoginInfoId());
+            userService.updateUserLoginInfoById(userLoginInfo);
         } else {
             // 密码错误
             map.put("code", "404");

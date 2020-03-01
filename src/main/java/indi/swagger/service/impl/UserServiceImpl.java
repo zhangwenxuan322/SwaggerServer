@@ -61,7 +61,7 @@ public class UserServiceImpl implements UserService {
             userProfile = userMapper.selectUserBySwaggerId(userProfile.getUserSwaggerId());
         }
         // 创建登录信息
-        UserLoginInfo userLoginInfo = new UserLoginInfo("", "", null, 0, userProfile.getUserId());
+        UserLoginInfo userLoginInfo = new UserLoginInfo("", "", null, 1, userProfile.getUserId());
         userMapper.insertUserLoginInfo(userLoginInfo);
         int loginId = userMapper.selectLoginInfoByUserId(userProfile.getUserId());
         userProfile.setUserLoginInfoId(loginId);
@@ -92,5 +92,10 @@ public class UserServiceImpl implements UserService {
         userProfile.setUserPassword(EncryptionUtil.SHA256(password));
         userMapper.updateUserPasswordById(userProfile);
         return true;
+    }
+
+    @Override
+    public void updateUserLoginInfoById(UserLoginInfo userLoginInfo) {
+        userMapper.updateUserLoginInfoById(userLoginInfo);
     }
 }

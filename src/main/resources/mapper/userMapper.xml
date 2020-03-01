@@ -60,6 +60,15 @@
          where user_id=#{userId}
     </update>
 
+    <update id="updateUserLoginInfoById" parameterType="indi.swagger.entity.UserLoginInfo">
+        update t_user_login_info
+           set login_ip=#{loginIp},
+               login_place=#{loginPlace},
+               login_time=#{loginTime},
+               is_logout=#{isLogout}
+         where login_id=#{loginId}
+    </update>
+
     <select id="selectUserByPhone" resultType="indi.swagger.entity.UserProfile" parameterType="string">
         <include refid="selectUser"></include>
         where user_phone=#{phone}

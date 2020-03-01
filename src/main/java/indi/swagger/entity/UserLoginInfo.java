@@ -27,6 +27,10 @@ public class UserLoginInfo {
         this.loginUserId = loginUserId;
     }
 
+    public void setLoginId(int loginId) {
+        this.loginId = loginId;
+    }
+
     public int getLoginId() {
         return loginId;
     }

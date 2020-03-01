@@ -61,4 +61,10 @@ public interface UserMapper {
      * @param userProfile
      */
     void updateUserPasswordById(UserProfile userProfile);
+
+    /**
+     * 更新用户登录信息
+     * @param userLoginInfo
+     */
+    void updateUserLoginInfoById(UserLoginInfo userLoginInfo);
 }
