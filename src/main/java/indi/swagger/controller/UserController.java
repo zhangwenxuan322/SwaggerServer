@@ -163,7 +163,7 @@ public class UserController {
      * @param password
      * @return
      */
-    @PutMapping("user/info")
+    @PutMapping("user/password")
     public Map<String, Object> changePassword(@RequestParam String phone, @RequestParam String password) {
         logger.info("手机号：" + phone + "开始修改密码");
         Map<String, Object> map = new HashMap<>();
