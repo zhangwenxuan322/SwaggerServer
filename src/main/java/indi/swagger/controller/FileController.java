@@ -19,7 +19,7 @@ import java.util.Map;
 
 /**
  * @program: Swagger
- * @description: 文件上传控制器
+ * @description: 文件控制器
  * @author: 张文轩
  * @create: 2020-03-04 10:50
  **/

@@ -6,6 +6,7 @@
 /Users/zhangwenxuan/IdeaProjects/Swagger/src/main/java/indi/swagger/SwaggerApplication.java
 /Users/zhangwenxuan/IdeaProjects/Swagger/src/main/java/indi/swagger/service/VerCodeService.java
 /Users/zhangwenxuan/IdeaProjects/Swagger/src/main/java/indi/swagger/entity/UserLoginInfo.java
+/Users/zhangwenxuan/IdeaProjects/Swagger/src/main/java/indi/swagger/controller/FileController.java
 /Users/zhangwenxuan/IdeaProjects/Swagger/src/main/java/indi/swagger/service/UserService.java
 /Users/zhangwenxuan/IdeaProjects/Swagger/src/main/java/indi/swagger/controller/UserController.java
 /Users/zhangwenxuan/IdeaProjects/Swagger/src/main/java/indi/swagger/constant/Constant.java

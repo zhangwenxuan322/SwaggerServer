@@ -19,4 +19,5 @@ logging:
   config: classpath:log4j2.yml
 upload:
   file:
-    path: /Users/zhangwenxuan/Desktop/upload
+    path: /home/admin/portrait
+#    path: /Users/zhangwenxuan/Desktop/upload
