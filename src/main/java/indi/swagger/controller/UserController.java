@@ -93,7 +93,7 @@ public class UserController {
         // 调用注册服务
         logger.info("调用用户注册服务");
         TokenResult result = userService.registerUser(userProfile);
-        map.put("code", result.getCode());
+        map.put("code", String.valueOf(result.getCode()));
         map.put("user_id", result.getUserId());
         map.put("token", result.getToken());
         map.put("error_message", result.getErrorMessage());
