@@ -23,6 +23,13 @@ public interface UserService {
     UserProfile selectUserBySwaggerId(String swaggerId);
 
     /**
+     * 根基id查询用户信息
+     * @param id
+     * @return
+     */
+    UserProfile selectUserById(int id);
+
+    /**
      * 注册用户
      * @param userProfile
      * @return

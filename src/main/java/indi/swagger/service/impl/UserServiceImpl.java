@@ -43,6 +43,11 @@ public class UserServiceImpl implements UserService {
         return userMapper.selectUserBySwaggerId(swaggerId);
     }
 
+    @Override
+    public UserProfile selectUserById(int id) {
+        return userMapper.selectUserById(id);
+    }
+
     @Transactional
     @Override
     public TokenResult registerUser(UserProfile userProfile) throws Exception {

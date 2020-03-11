@@ -70,6 +70,26 @@ public class UserController {
     }
 
     /**
+     * 根据id查询用户信息
+     * @param id
+     * @return
+     */
+    @GetMapping("user/id/{id}")
+    public Map<String, Object> getUserById(@PathVariable(value = "id") int id) {
+        logger.info("调用Id查询用户信息服务");
+        Map<String, Object> map = new HashMap<>();
+        UserProfile userProfile = userService.selectUserById(id);
+        if (userProfile == null) {
+            map.put("code", "404");
+            map.put("message", "user_not_exist");
+        } else {
+            map.put("code", "200");
+            map.put("userProfile", userProfile);
+        }
+        return map;
+    }
+
+    /**
      * 用户注册
      *
      * @return
