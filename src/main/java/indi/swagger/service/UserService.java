@@ -49,4 +49,10 @@ public interface UserService {
      * @param userLoginInfo
      */
     void updateUserLoginInfoById(UserLoginInfo userLoginInfo);
+
+    /**
+     * 用户退出
+     * @param loginId
+     */
+    void logout(int loginId);
 }

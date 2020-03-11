@@ -89,4 +89,15 @@
           from t_user_login_info
          where login_user_id=#{userId}
     </select>
+
+    <select id="selectLoginInfoById" resultType="indi.swagger.entity.UserLoginInfo" parameterType="int">
+        select login_id as loginId,
+               login_ip as loginIp,
+               login_place as loginPlace,
+               login_time as loginTime,
+               is_logout as isLogout,
+               login_user_id as loginUserId
+          from t_user_login_info
+         where login_id=#{loginId}
+    </select>
 </mapper>

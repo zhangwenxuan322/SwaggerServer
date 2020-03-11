@@ -200,4 +200,19 @@ public class UserController {
         }
         return map;
     }
+
+    /**
+     * 用户退出
+     * @param loginId
+     * @return
+     */
+    @PostMapping("user/unauth")
+    public Map<String, Object> logout(@RequestParam int loginId) {
+        logger.info("调用用户退出服务");
+        Map<String, Object> map = new HashMap<>();
+        userService.logout(loginId);
+        map.put("code", "200");
+        map.put("message", "success");
+        return map;
+    }
 }

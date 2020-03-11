@@ -103,4 +103,14 @@ public class UserServiceImpl implements UserService {
     public void updateUserLoginInfoById(UserLoginInfo userLoginInfo) {
         userMapper.updateUserLoginInfoById(userLoginInfo);
     }
+
+    @Transactional
+    @Override
+    public void logout(int loginId) {
+        logger.info("开始修改用户退出状态");
+        UserLoginInfo userLoginInfo = userMapper.selectLoginInfoById(loginId);
+        userLoginInfo.setIsLogout(1);
+        userMapper.updateUserLoginInfoById(userLoginInfo);
+        logger.info("退出状态修改成功");
+    }
 }
