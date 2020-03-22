@@ -66,7 +66,7 @@ public class UserServiceImpl implements UserService {
             userProfile = userMapper.selectUserBySwaggerId(userProfile.getUserSwaggerId());
         }
         // 创建登录信息
-        UserLoginInfo userLoginInfo = new UserLoginInfo("", "", null, 1, userProfile.getUserId());
+        UserLoginInfo userLoginInfo = new UserLoginInfo("", null, 1, userProfile.getUserId(), 0.0, 0.0, null);
         userMapper.insertUserLoginInfo(userLoginInfo);
         int loginId = userMapper.selectLoginInfoByUserId(userProfile.getUserId());
         userProfile.setUserLoginInfoId(loginId);

@@ -11,20 +11,24 @@ import java.util.Date;
 public class UserLoginInfo {
     private int loginId;
     private String loginIp;
-    private String loginPlace;
     private Date loginTime;
     private int isLogout;
     private int loginUserId;
+    private double loginLong;
+    private double loginLat;
+    private String loginDevice;
 
     public UserLoginInfo() {
     }
 
-    public UserLoginInfo(String loginIp, String loginPlace, Date loginTime, int isLogout, int loginUserId) {
+    public UserLoginInfo(String loginIp, Date loginTime, int isLogout, int loginUserId, double loginLong, double loginLat, String loginDevice) {
         this.loginIp = loginIp;
-        this.loginPlace = loginPlace;
         this.loginTime = loginTime;
         this.isLogout = isLogout;
         this.loginUserId = loginUserId;
+        this.loginLong = loginLong;
+        this.loginLat = loginLat;
+        this.loginDevice = loginDevice;
     }
 
     public void setLoginId(int loginId) {
@@ -43,12 +47,20 @@ public class UserLoginInfo {
         this.loginIp = loginIp;
     }
 
-    public String getLoginPlace() {
-        return loginPlace;
+    public double getLoginLong() {
+        return loginLong;
     }
 
-    public void setLoginPlace(String loginPlace) {
-        this.loginPlace = loginPlace;
+    public void setLoginLong(double loginLong) {
+        this.loginLong = loginLong;
+    }
+
+    public double getLoginLat() {
+        return loginLat;
+    }
+
+    public void setLoginLat(double loginLat) {
+        this.loginLat = loginLat;
     }
 
     public Date getLoginTime() {
@@ -75,15 +87,25 @@ public class UserLoginInfo {
         this.loginUserId = loginUserId;
     }
 
+    public String getLoginDevice() {
+        return loginDevice;
+    }
+
+    public void setLoginDevice(String loginDevice) {
+        this.loginDevice = loginDevice;
+    }
+
     @Override
     public String toString() {
         return "UserLoginInfo{" +
                 "loginId=" + loginId +
                 ", loginIp='" + loginIp + '\'' +
-                ", loginPlace='" + loginPlace + '\'' +
                 ", loginTime=" + loginTime +
                 ", isLogout=" + isLogout +
                 ", loginUserId=" + loginUserId +
+                ", loginLong=" + loginLong +
+                ", loginLat=" + loginLat +
+                ", loginDevice='" + loginDevice + '\'' +
                 '}';
     }
 }

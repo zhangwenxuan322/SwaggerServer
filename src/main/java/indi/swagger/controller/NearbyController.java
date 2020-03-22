@@ -1,6 +1,11 @@
 package indi.swagger.controller;
 
+import indi.swagger.entity.NearbyUser;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 /**
  * @program: Swagger
@@ -10,4 +15,15 @@ import org.springframework.web.bind.annotation.RestController;
  **/
 @RestController
 public class NearbyController {
+
+    /**
+     * 获取指定坐标附近用户列表
+     *
+     * @param place
+     * @return
+     */
+    @GetMapping("nearby/list")
+    public List<NearbyUser> getNearbyList(@RequestParam String place) {
+        return null;
+    }
 }

@@ -132,7 +132,9 @@ public class UserController {
     public Map<String, Object> userLogin(@RequestParam(value = "account") String account,
                                          @RequestParam(value = "password") String password,
                                          @RequestParam(value = "ip") String ip,
-                                         @RequestParam(value = "place") String place) {
+                                         @RequestParam(value = "long") Double lon,
+                                         @RequestParam(value = "lat") Double lat,
+                                         @RequestParam(value = "device") String device) {
         logger.info("账号：" + account + "开始登录");
         Map<String, Object> map = new HashMap<>();
         if (account == null || password == null) {
@@ -163,10 +165,12 @@ public class UserController {
             // 更新用户登录信息表
             UserLoginInfo userLoginInfo = new UserLoginInfo();
             userLoginInfo.setLoginIp(ip);
-            userLoginInfo.setLoginPlace(place);
             userLoginInfo.setLoginTime(new Date());
             userLoginInfo.setIsLogout(0);
             userLoginInfo.setLoginId(userProfile.getUserLoginInfoId());
+            userLoginInfo.setLoginLong(lon);
+            userLoginInfo.setLoginLat(lat);
+            userLoginInfo.setLoginDevice(device);
             userService.updateUserLoginInfoById(userLoginInfo);
         } else {
             // 密码错误
