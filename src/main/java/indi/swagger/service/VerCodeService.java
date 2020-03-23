@@ -9,7 +9,7 @@ public interface VerCodeService {
 
     /**
      * 根据用户id生成验证码
-     * @param codeUserId
+     * @param codePhone
      * @return
      */
     VerCode createVerCode(String codePhone);

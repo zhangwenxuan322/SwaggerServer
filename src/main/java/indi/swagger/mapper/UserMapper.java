@@ -2,7 +2,6 @@ package indi.swagger.mapper;
 
 import indi.swagger.entity.UserLoginInfo;
 import indi.swagger.entity.UserProfile;
-import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
 /**

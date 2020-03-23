@@ -39,12 +39,14 @@
         insert into
                 t_user_login_info(
                     login_ip,
-                    login_place,
                     login_time,
                     is_logout,
-                    login_user_id
+                    login_user_id,
+                    login_long,
+                    login_lat,
+                    login_device
                 )
-        values (#{loginIp}, #{loginPlace}, #{loginTime}, #{isLogout}, #{loginUserId})
+        values (#{loginIp}, #{loginTime}, #{isLogout}, #{loginUserId},#{loginLong},#{loginLat},#{loginDevice})
     </insert>
 
     <update id="updateUserById" parameterType="indi.swagger.entity.UserProfile">
@@ -63,9 +65,11 @@
     <update id="updateUserLoginInfoById" parameterType="indi.swagger.entity.UserLoginInfo">
         update t_user_login_info
            set login_ip=#{loginIp},
-               login_place=#{loginPlace},
                login_time=#{loginTime},
-               is_logout=#{isLogout}
+               is_logout=#{isLogout},
+               login_long=#{loginLong},
+               login_lat=#{loginLat},
+               login_device=#{loginDevice}
          where login_id=#{loginId}
     </update>
 
@@ -93,10 +97,12 @@
     <select id="selectLoginInfoById" resultType="indi.swagger.entity.UserLoginInfo" parameterType="int">
         select login_id as loginId,
                login_ip as loginIp,
-               login_place as loginPlace,
                login_time as loginTime,
                is_logout as isLogout,
-               login_user_id as loginUserId
+               login_user_id as loginUserId,
+               login_long as loginLong,
+               login_lat as loginLat,
+               login_device as loginDevice
           from t_user_login_info
          where login_id=#{loginId}
     </select>
