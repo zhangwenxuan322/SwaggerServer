@@ -2,6 +2,11 @@
 ## Api
 ### 短信验证码
 #### 获取短信验证码
-- 请求URL:`/swagger/code/{phone}`
+- 请求URL：`/swagger/code/{phone}`
+- 请求方式：`GET`
+- 请求参数：`phone=123456789`
+### 用户
+#### 根据手机号查询用户
+- 请求URL：`/swagger/user/phone/{phone}`
 - 请求方式：`GET`
 - 请求参数：`phone=123456789`
