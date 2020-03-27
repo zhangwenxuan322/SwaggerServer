@@ -63,7 +63,7 @@
 - 请求参数：
 ```json
 {
-  "file": "file", //文件类型
+  "file": "file",
   "filename": "test.png"
 }
 ```

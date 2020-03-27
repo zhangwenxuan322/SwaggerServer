@@ -4,13 +4,6 @@
     <list default="true" id="04d8deb3-5c20-4b57-84bc-4daefdff3bb9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/opendoc.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/opendoc.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-indi.swagger.SwaggerApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-indi.swagger.SwaggerApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/indi.swagger.SwaggerApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/indi.swagger.SwaggerApplicationTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/swagger-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/swagger-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/swagger-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/swagger-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +235,8 @@
       <workItem from="1584841300586" duration="4381000" />
       <workItem from="1584876418729" duration="3278000" />
       <workItem from="1584930518045" duration="6223000" />
-      <workItem from="1585024336543" duration="2076000" />
+      <workItem from="1585024336543" duration="2266000" />
+      <workItem from="1585272902587" duration="1012000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交">
       <created>1582095517171</created>
@@ -447,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585025258064</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="完成现有接口文档">
+      <created>1585054501998</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1585054501998</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -485,7 +486,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="实现查询用户API" />
     <MESSAGE value="加入手机短信验证码模拟模块" />
     <MESSAGE value="删除用户id的set方法" />
     <MESSAGE value="完成创建短信验证码的API" />
@@ -510,7 +510,8 @@
     <MESSAGE value="添加附近用户查询接口" />
     <MESSAGE value="新增验证码接口文档" />
     <MESSAGE value="新增手机号查询用户接口文档" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增手机号查询用户接口文档" />
+    <MESSAGE value="完成现有接口文档" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成现有接口文档" />
   </component>
   <component name="WindowStateProjectService">
     <state x="992" y="343" key="#Deploy_to_Host" timestamp="1582871306309">
@@ -547,11 +548,11 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1018" y="484" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1580741276494" />
-    <state x="783" y="239" key="CommitChangelistDialog2" timestamp="1585025257517">
+    <state x="783" y="239" key="CommitChangelistDialog2" timestamp="1585054499637">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="783" y="239" key="CommitChangelistDialog2/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1583910937520" />
-    <state x="783" y="239" key="CommitChangelistDialog2/0.23.2560.1417@0.23.2560.1417" timestamp="1585025257517" />
+    <state x="783" y="239" key="CommitChangelistDialog2/0.23.2560.1417@0.23.2560.1417" timestamp="1585054499637" />
     <state x="100" y="123" width="2360" height="1217" key="DiffContextDialog" timestamp="1582957914843">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
@@ -600,11 +601,11 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="768" y="312" key="SettingsEditor/0.23.2560.1417@0.23.2560.1417" timestamp="1584885681317" />
-    <state x="880" y="466" key="Vcs.Push.Dialog.v2" timestamp="1585025260555">
+    <state x="880" y="466" key="Vcs.Push.Dialog.v2" timestamp="1585054504080">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="880" y="466" key="Vcs.Push.Dialog.v2/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1583910939919" />
-    <state x="880" y="466" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1585025260555" />
+    <state x="880" y="466" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1585054504080" />
     <state x="961" y="512" key="git4idea.merge.GitPullDialog" timestamp="1582957825857">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
