@@ -27,20 +27,26 @@ public class NearbyController {
     /**
      * 获取指定坐标附近用户列表
      *
-     * @param lon
-     * @param lat
-     * @param limit
+     * @param lon 经度
+     * @param lat 纬度
+     * @param limit 范围限制
+     * @param name 昵称
+     * @param sex 性别
      * @return
      */
     @GetMapping("nearby/list")
     public List<NearbyUser> getNearbyList(@RequestParam Double lon,
                                           @RequestParam Double lat,
-                                          @RequestParam Double limit) {
+                                          @RequestParam Double limit,
+                                          @RequestParam String name,
+                                          @RequestParam String sex) {
         logger.info("坐标-->lon:" + lon + "---lat:" + lat + "查询附近用户");
         Map<String, Object> map = new HashMap<>();
         map.put("lon", lon);
         map.put("lat", lat);
         map.put("limitDistance", limit);
+        map.put("name", name);
+        map.put("sex", sex);
         return nearbyService.getNearbyUsers(map);
     }
 }
