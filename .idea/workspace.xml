@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="04d8deb3-5c20-4b57-84bc-4daefdff3bb9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/opendoc.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/opendoc.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/indi/swagger/controller/NearbyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/controller/NearbyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/nearbyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/nearbyMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-indi.swagger.SwaggerApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-indi.swagger.SwaggerApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/indi.swagger.SwaggerApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/indi.swagger.SwaggerApplicationTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swagger-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/swagger-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swagger-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/swagger-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +67,7 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
-  <component name="RunManager" selected="Spring Boot.SwaggerApplication">
+  <component name="RunManager" selected="Deploy to Host.Deploy to Host">
     <configuration name="Deploy to Host" type="DEPLOY_HOST_RUN_CONFIGURATION" factoryName="Deploy to Host">
       <option name="address" value="106.15.91.232" />
       <option name="afterCommand" value="" />
@@ -258,7 +261,10 @@
       <workItem from="1585789646710" duration="1378000" />
       <workItem from="1585882965085" duration="3974000" />
       <workItem from="1586226412665" duration="3576000" />
-      <workItem from="1586349042324" duration="3497000" />
+      <workItem from="1586349042324" duration="4204000" />
+      <workItem from="1586394372908" duration="579000" />
+      <workItem from="1586415989414" duration="1537000" />
+      <workItem from="1586436145966" duration="1419000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交">
       <created>1582095517171</created>
@@ -477,7 +483,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585275316758</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="修改附近的人接口，添加昵称和性别筛选">
+      <created>1586356196786</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1586356196786</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -515,7 +528,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="删除用户id的set方法" />
     <MESSAGE value="完成创建短信验证码的API" />
     <MESSAGE value="加入手机号合法性验证" />
     <MESSAGE value="完成用户注册API" />
@@ -540,7 +552,8 @@
     <MESSAGE value="新增手机号查询用户接口文档" />
     <MESSAGE value="完成现有接口文档" />
     <MESSAGE value="modify README" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify README" />
+    <MESSAGE value="修改附近的人接口，添加昵称和性别筛选" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改附近的人接口，添加昵称和性别筛选" />
   </component>
   <component name="WindowStateProjectService">
     <state x="992" y="343" key="#Deploy_to_Host" timestamp="1582871306309">
@@ -577,55 +590,55 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1018" y="484" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1580741276494" />
-    <state x="783" y="239" key="CommitChangelistDialog2" timestamp="1585275316394">
+    <state x="783" y="239" key="CommitChangelistDialog2" timestamp="1586356196285">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="783" y="239" key="CommitChangelistDialog2/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1583910937520" />
-    <state x="783" y="239" key="CommitChangelistDialog2/0.23.2560.1417@0.23.2560.1417" timestamp="1585275316394" />
+    <state x="783" y="239" key="CommitChangelistDialog2/0.23.2560.1417@0.23.2560.1417" timestamp="1586356196285" />
     <state x="100" y="123" width="2360" height="1217" key="DiffContextDialog" timestamp="1582957914843">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="100" y="123" width="2360" height="1217" key="DiffContextDialog/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1582957914843" />
-    <state width="2560" height="301" key="GridCell.Tab.0.bottom" timestamp="1586355881983">
+    <state width="2560" height="301" key="GridCell.Tab.0.bottom" timestamp="1586358581290">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="2560" height="301" key="GridCell.Tab.0.bottom/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1583934469424" />
-    <state width="2560" height="301" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1586355881983" />
-    <state width="2560" height="301" key="GridCell.Tab.0.center" timestamp="1586355881981">
+    <state width="2560" height="301" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1586358581290" />
+    <state width="2560" height="301" key="GridCell.Tab.0.center" timestamp="1586358581287">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="2560" height="301" key="GridCell.Tab.0.center/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1583934469423" />
-    <state width="2560" height="301" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1586355881981" />
-    <state width="2560" height="301" key="GridCell.Tab.0.left" timestamp="1586355881981">
+    <state width="2560" height="301" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1586358581287" />
+    <state width="2560" height="301" key="GridCell.Tab.0.left" timestamp="1586358581286">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="2560" height="301" key="GridCell.Tab.0.left/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1583934469423" />
-    <state width="2560" height="301" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1586355881981" />
-    <state width="2560" height="301" key="GridCell.Tab.0.right" timestamp="1586355881983">
+    <state width="2560" height="301" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1586358581286" />
+    <state width="2560" height="301" key="GridCell.Tab.0.right" timestamp="1586358581290">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="2560" height="301" key="GridCell.Tab.0.right/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1583934469423" />
-    <state width="2560" height="301" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1586355881983" />
-    <state width="2560" height="301" key="GridCell.Tab.1.bottom" timestamp="1586355881985">
+    <state width="2560" height="301" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1586358581290" />
+    <state width="2560" height="301" key="GridCell.Tab.1.bottom" timestamp="1586356348636">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="2560" height="301" key="GridCell.Tab.1.bottom/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1583934309498" />
-    <state width="2560" height="301" key="GridCell.Tab.1.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1586355881985" />
-    <state width="2560" height="301" key="GridCell.Tab.1.center" timestamp="1586355881984">
+    <state width="2560" height="301" key="GridCell.Tab.1.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1586356348636" />
+    <state width="2560" height="301" key="GridCell.Tab.1.center" timestamp="1586356348634">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="2560" height="301" key="GridCell.Tab.1.center/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1583934309497" />
-    <state width="2560" height="301" key="GridCell.Tab.1.center/0.23.2560.1417@0.23.2560.1417" timestamp="1586355881984" />
-    <state width="2560" height="301" key="GridCell.Tab.1.left" timestamp="1586355881984">
+    <state width="2560" height="301" key="GridCell.Tab.1.center/0.23.2560.1417@0.23.2560.1417" timestamp="1586356348634" />
+    <state width="2560" height="301" key="GridCell.Tab.1.left" timestamp="1586356348633">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="2560" height="301" key="GridCell.Tab.1.left/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1583934309497" />
-    <state width="2560" height="301" key="GridCell.Tab.1.left/0.23.2560.1417@0.23.2560.1417" timestamp="1586355881984" />
-    <state width="2560" height="301" key="GridCell.Tab.1.right" timestamp="1586355881985">
+    <state width="2560" height="301" key="GridCell.Tab.1.left/0.23.2560.1417@0.23.2560.1417" timestamp="1586356348633" />
+    <state width="2560" height="301" key="GridCell.Tab.1.right" timestamp="1586356348635">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="2560" height="301" key="GridCell.Tab.1.right/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1583934309497" />
-    <state width="2560" height="301" key="GridCell.Tab.1.right/0.23.2560.1417@0.23.2560.1417" timestamp="1586355881985" />
+    <state width="2560" height="301" key="GridCell.Tab.1.right/0.23.2560.1417@0.23.2560.1417" timestamp="1586356348635" />
     <state x="332" y="82" key="NewModule_or_Project.wizard" timestamp="1586226595696">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -635,11 +648,11 @@
     </state>
     <state x="222" y="101" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1586226761033" />
     <state x="768" y="312" key="SettingsEditor/0.23.2560.1417@0.23.2560.1417" timestamp="1584885681317" />
-    <state x="880" y="466" key="Vcs.Push.Dialog.v2" timestamp="1585275524477">
+    <state x="880" y="466" key="Vcs.Push.Dialog.v2" timestamp="1586356198635">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="880" y="466" key="Vcs.Push.Dialog.v2/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1583910939919" />
-    <state x="880" y="466" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1585275524477" />
+    <state x="880" y="466" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1586356198635" />
     <state x="961" y="512" key="git4idea.merge.GitPullDialog" timestamp="1582957825857">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
