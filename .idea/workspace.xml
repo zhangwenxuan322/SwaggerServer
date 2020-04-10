@@ -3,13 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="04d8deb3-5c20-4b57-84bc-4daefdff3bb9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/exception/opendoc_exception.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/exception/opendoc_exception.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/opendoc.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/opendoc.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/indi/swagger/controller/FriendController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/controller/FriendController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/indi/swagger/mapper/FriendMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/mapper/FriendMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/indi/swagger/service/FriendService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/service/FriendService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/indi/swagger/service/impl/FriendServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/service/impl/FriendServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/friendMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/friendMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-indi.swagger.SwaggerApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-indi.swagger.SwaggerApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/indi.swagger.SwaggerApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/indi.swagger.SwaggerApplicationTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swagger-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/swagger-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swagger-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/swagger-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +69,7 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
-  <component name="RunManager" selected="Spring Boot.SwaggerApplication">
+  <component name="RunManager" selected="Deploy to Host.Deploy to Host">
     <configuration name="Deploy to Host" type="DEPLOY_HOST_RUN_CONFIGURATION" factoryName="Deploy to Host">
       <option name="address" value="106.15.91.232" />
       <option name="afterCommand" value="" />
@@ -267,7 +268,7 @@
       <workItem from="1586415989414" duration="1537000" />
       <workItem from="1586436145966" duration="1475000" />
       <workItem from="1586482182952" duration="3661000" />
-      <workItem from="1586519636045" duration="4188000" />
+      <workItem from="1586519636045" duration="4728000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交">
       <created>1582095517171</created>
@@ -521,7 +522,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586509262432</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="完成好友管理模块接口">
+      <created>1586530069955</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1586530069955</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -559,7 +567,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="优化了验证码请求的返回结果" />
     <MESSAGE value="新增了登录api" />
     <MESSAGE value="修改了api的code类型" />
     <MESSAGE value="修改.gitignore" />
@@ -584,7 +591,8 @@
     <MESSAGE value="新增好友关系模块" />
     <MESSAGE value="完成好友管理模块接口设计" />
     <MESSAGE value="新增好友管理模块的服务层以及持久层" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增好友管理模块的服务层以及持久层" />
+    <MESSAGE value="完成好友管理模块接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成好友管理模块接口" />
   </component>
   <component name="WindowStateProjectService">
     <state x="992" y="343" key="#Deploy_to_Host" timestamp="1582871306309">
@@ -622,56 +630,56 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1018" y="484" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1580741276494" />
-    <state x="440" y="23" key="CommitChangelistDialog2" timestamp="1586509262077">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="783" y="239" key="CommitChangelistDialog2" timestamp="1586530069523">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="783" y="239" key="CommitChangelistDialog2/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1583910937520" />
     <state x="440" y="23" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1586509262077" />
-    <state x="783" y="239" key="CommitChangelistDialog2/0.23.2560.1417@0.23.2560.1417" timestamp="1586441402165" />
+    <state x="783" y="239" key="CommitChangelistDialog2/0.23.2560.1417@0.23.2560.1417" timestamp="1586530069523" />
     <state x="100" y="123" width="2360" height="1217" key="DiffContextDialog" timestamp="1582957914843">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="100" y="123" width="2360" height="1217" key="DiffContextDialog/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1582957914843" />
-    <state width="2560" height="301" key="GridCell.Tab.0.bottom" timestamp="1586529976110">
+    <state width="2560" height="301" key="GridCell.Tab.0.bottom" timestamp="1586530519456">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="2560" height="301" key="GridCell.Tab.0.bottom/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1583934469424" />
-    <state width="2560" height="301" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1586529976110" />
-    <state width="2560" height="301" key="GridCell.Tab.0.center" timestamp="1586529976096">
+    <state width="2560" height="301" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1586530519456" />
+    <state width="2560" height="301" key="GridCell.Tab.0.center" timestamp="1586530519455">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="2560" height="301" key="GridCell.Tab.0.center/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1583934469423" />
-    <state width="2560" height="301" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1586529976096" />
-    <state width="2560" height="301" key="GridCell.Tab.0.left" timestamp="1586529976095">
+    <state width="2560" height="301" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1586530519455" />
+    <state width="2560" height="301" key="GridCell.Tab.0.left" timestamp="1586530519454">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="2560" height="301" key="GridCell.Tab.0.left/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1583934469423" />
-    <state width="2560" height="301" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1586529976095" />
-    <state width="2560" height="301" key="GridCell.Tab.0.right" timestamp="1586529976104">
+    <state width="2560" height="301" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1586530519454" />
+    <state width="2560" height="301" key="GridCell.Tab.0.right" timestamp="1586530519455">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="2560" height="301" key="GridCell.Tab.0.right/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1583934469423" />
-    <state width="2560" height="301" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1586529976104" />
-    <state width="2560" height="301" key="GridCell.Tab.1.bottom" timestamp="1586529976131">
+    <state width="2560" height="301" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1586530519455" />
+    <state width="2560" height="301" key="GridCell.Tab.1.bottom" timestamp="1586530097617">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="2560" height="301" key="GridCell.Tab.1.bottom/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1583934309498" />
-    <state width="2560" height="301" key="GridCell.Tab.1.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1586529976131" />
-    <state width="2560" height="301" key="GridCell.Tab.1.center" timestamp="1586529976125">
+    <state width="2560" height="301" key="GridCell.Tab.1.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1586530097617" />
+    <state width="2560" height="301" key="GridCell.Tab.1.center" timestamp="1586530097617">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="2560" height="301" key="GridCell.Tab.1.center/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1583934309497" />
-    <state width="2560" height="301" key="GridCell.Tab.1.center/0.23.2560.1417@0.23.2560.1417" timestamp="1586529976125" />
-    <state width="2560" height="301" key="GridCell.Tab.1.left" timestamp="1586529976111">
+    <state width="2560" height="301" key="GridCell.Tab.1.center/0.23.2560.1417@0.23.2560.1417" timestamp="1586530097617" />
+    <state width="2560" height="301" key="GridCell.Tab.1.left" timestamp="1586530097616">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="2560" height="301" key="GridCell.Tab.1.left/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1583934309497" />
-    <state width="2560" height="301" key="GridCell.Tab.1.left/0.23.2560.1417@0.23.2560.1417" timestamp="1586529976111" />
-    <state width="2560" height="301" key="GridCell.Tab.1.right" timestamp="1586529976128">
+    <state width="2560" height="301" key="GridCell.Tab.1.left/0.23.2560.1417@0.23.2560.1417" timestamp="1586530097616" />
+    <state width="2560" height="301" key="GridCell.Tab.1.right" timestamp="1586530097617">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="2560" height="301" key="GridCell.Tab.1.right/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1583934309497" />
-    <state width="2560" height="301" key="GridCell.Tab.1.right/0.23.2560.1417@0.23.2560.1417" timestamp="1586529976128" />
+    <state width="2560" height="301" key="GridCell.Tab.1.right/0.23.2560.1417@0.23.2560.1417" timestamp="1586530097617" />
     <state x="332" y="82" key="NewModule_or_Project.wizard" timestamp="1586226595696">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -681,12 +689,12 @@
     </state>
     <state x="222" y="101" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1586226761033" />
     <state x="768" y="312" key="SettingsEditor/0.23.2560.1417@0.23.2560.1417" timestamp="1584885681317" />
-    <state x="495" y="297" key="Vcs.Push.Dialog.v2" timestamp="1586509265880">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="880" y="466" key="Vcs.Push.Dialog.v2" timestamp="1586530072219">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="880" y="466" key="Vcs.Push.Dialog.v2/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1583910939919" />
     <state x="495" y="297" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1586509265880" />
-    <state x="880" y="466" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1586441408699" />
+    <state x="880" y="466" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1586530072219" />
     <state x="961" y="512" key="git4idea.merge.GitPullDialog" timestamp="1582957825857">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>

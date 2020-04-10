@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: indi.swagger.SwaggerApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 41.754 s - in indi.swagger.SwaggerApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 43.646 s - in indi.swagger.SwaggerApplicationTests

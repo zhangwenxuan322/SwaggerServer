@@ -76,3 +76,53 @@
 - 请求URL：`/swagger/nearby/list`
 - 请求方式：`GET`
 - 请求参数：`lon=-122.08400000000002&lat=37.421998333333335&limit=10000&name=test&sex=男`
+### 好友管理
+#### 查询好友关系
+- 请求URL：`/swagger/friend/filter`
+- 请求方式：`GET`
+- 请求参数：`mainUserId=1&friendUserId=2`
+#### 建立好友关系
+- 请求URL：`/swagger/friend/making`
+- 请求方式：`POST`
+- 请求参数：
+```json
+{
+	"id": 0,
+	"mainUserId": 11,
+	"friendUserId": 12,
+	"remarkName": null,
+	"groupName": null,
+	"createTime": null,
+	"modifyTime": null
+}
+```
+#### 修改好友关系
+- 请求URL：`/swagger/friend/modification`
+- 请求方式：`PUT`
+- 请求参数：
+```json
+{
+	"id": 2,
+	"mainUserId": 2,
+	"friendUserId": 1,
+	"remarkName": "嘿嘿",
+	"groupName": "不解释",
+	"createTime": null,
+	"modifyTime": null
+}
+```
+#### 删除好友
+- 请求URL：`/swagger/friend/release`
+- 请求方式：`DELETE`
+- 请求参数：
+```json
+{
+	"id": 2,
+	"mainUserId": 2,
+	"friendUserId": 1,
+	"remarkName": "嘿嘿",
+	"groupName": "不解释",
+	"createTime": null,
+	"modifyTime": null
+}
+```
