@@ -43,4 +43,28 @@ public class FriendController {
         Map<String, String> map = new HashMap<>();
         return map;
     }
+
+    /**
+     * 修改好友信息，包括备注以及分组
+     *
+     * @param friendsManager
+     * @return
+     */
+    @PutMapping("friend/modification")
+    public Map<String, String> friendModification(@RequestParam FriendsManager friendsManager) {
+        Map<String, String> map = new HashMap<>();
+        return map;
+    }
+
+    /**
+     * 解除好友关系
+     *
+     * @param friendsManager
+     * @return
+     */
+    @DeleteMapping("friend/release")
+    public Map<String, String> friendRelease(@RequestParam FriendsManager friendsManager) {
+        Map<String, String> map = new HashMap<>();
+        return map;
+    }
 }
