@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="indi.swagger.mapper.FriendMapper">
+    <insert id="addFriends" parameterType="map">
+        insert into t_user_friend(main_user_id, friend_user_id, create_time)
+        values(#{mainId}, #{friendId}, sysdate())
+    </insert>
 
+    <update id="updateFriendRelation" parameterType="indi.swagger.entity.FriendsManager">
+        update t_user_friend
+           set remark_name = #{remarkName},
+               group_name  = #{groupName},
+               modify_time = sysdate()
+         where id = #{id}
+    </update>
+
+    <delete id="deleteFriends" parameterType="map">
+        delete from t_user_friend
+              where main_user_id = #{mainUserId}
+                and friend_user_id = #{friendUserId}
+    </delete>
+
+    <select id="selectFriendsByMainAndFriend" resultType="indi.swagger.entity.FriendsManager" parameterType="map">
+        select id as id,
+               main_user_id as mainUserId,
+               friend_user_id as friendUserId,
+               remark_name as remarkName,
+               group_name as groupName,
+               create_time as createTime,
+               modify_time as modifyTime
+          from t_user_friend
+         where main_user_id = #{mainUserId}
+           and friend_user_id = #{friendUserId}
+    </select>
 </mapper>
