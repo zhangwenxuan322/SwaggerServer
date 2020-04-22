@@ -61,7 +61,7 @@ public class UserServiceImpl implements UserService {
         if (!"".equals(userProfile.getUserPhone())) {
             // 手机号注册
             userProfile = userMapper.selectUserByPhone(userProfile.getUserPhone());
-        } else if (!"".equals(userProfile.getUserSwaggerId())){
+        } else if (!"".equals(userProfile.getUserSwaggerId())) {
             // SwaggerId注册
             userProfile = userMapper.selectUserBySwaggerId(userProfile.getUserSwaggerId());
         }
@@ -75,7 +75,7 @@ public class UserServiceImpl implements UserService {
         UserModel userModel = new UserModel()
                 .setId("swaggertestid" + String.valueOf(userProfile.getUserId())) // TODO:上线后修改
                 .setName(userProfile.getUserName())
-                .setPortrait(userProfile.getUserPortrait());
+                .setPortrait("http://106.15.91.232:8080/swagger/user/portrait/" + userProfile.getUserPortrait());
         TokenResult result = user.register(userModel);
         userProfile.setUserToken(result.getToken());
         userMapper.updateUserById(userProfile);
