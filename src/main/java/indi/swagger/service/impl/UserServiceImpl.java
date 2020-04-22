@@ -87,7 +87,7 @@ public class UserServiceImpl implements UserService {
     @Transactional
     @Override
     public Boolean upadteUserPassword(String phone, String password) {
-        logger.info("开始修改密码");
+        logger.info("开始修改密码服务");
         UserProfile userProfile = userMapper.selectUserByPhone(phone);
         if (userProfile == null) {
             // 用户不存在
@@ -102,6 +102,24 @@ public class UserServiceImpl implements UserService {
     @Override
     public void updateUserLoginInfoById(UserLoginInfo userLoginInfo) {
         userMapper.updateUserLoginInfoById(userLoginInfo);
+    }
+
+    @Override
+    public void updateUserSwaggerIdById(UserProfile userProfile) {
+        logger.info("调用SwaggerId修改服务");
+        userMapper.updateUserSwaggerIdById(userProfile);
+    }
+
+    @Override
+    public void updateUserSexById(UserProfile userProfile) {
+        logger.info("调用用户性别修改服务");
+        userMapper.updateUserSexById(userProfile);
+    }
+
+    @Override
+    public void updateUserBioById(UserProfile userProfile) {
+        logger.info("调用用户个性签名修改服务");
+        userMapper.updateUserBioById(userProfile);
     }
 
     @Transactional

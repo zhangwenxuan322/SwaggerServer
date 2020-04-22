@@ -10,6 +10,7 @@ import io.rong.models.response.TokenResult;
 public interface UserService {
     /**
      * 根据手机号查询用户信息
+     *
      * @param phone
      * @return
      */
@@ -17,6 +18,7 @@ public interface UserService {
 
     /**
      * 根据SwaggerId查询用户信息
+     *
      * @param swaggerId
      * @return
      */
@@ -24,6 +26,7 @@ public interface UserService {
 
     /**
      * 根基id查询用户信息
+     *
      * @param id
      * @return
      */
@@ -31,6 +34,7 @@ public interface UserService {
 
     /**
      * 注册用户
+     *
      * @param userProfile
      * @return
      */
@@ -38,6 +42,7 @@ public interface UserService {
 
     /**
      * 修改用户密码
+     *
      * @param phone
      * @param password
      * @return
@@ -46,12 +51,35 @@ public interface UserService {
 
     /**
      * 修改用户登录信息
+     *
      * @param userLoginInfo
      */
     void updateUserLoginInfoById(UserLoginInfo userLoginInfo);
 
     /**
+     * 根据id更新用户SwaggerId
+     *
+     * @param userProfile
+     */
+    void updateUserSwaggerIdById(UserProfile userProfile);
+
+    /**
+     * 根据id更新用户性别
+     *
+     * @param userProfile
+     */
+    void updateUserSexById(UserProfile userProfile);
+
+    /**
+     * 根据id更新用户个性签名
+     *
+     * @param userProfile
+     */
+    void updateUserBioById(UserProfile userProfile);
+
+    /**
      * 用户退出
+     *
      * @param loginId
      */
     void logout(int loginId);

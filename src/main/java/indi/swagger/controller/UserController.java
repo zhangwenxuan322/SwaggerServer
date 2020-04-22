@@ -207,6 +207,54 @@ public class UserController {
     }
 
     /**
+     * 修改用户性别
+     *
+     * @param userProfile
+     * @return
+     */
+    @PutMapping("user/sex")
+    public Map<String, Object> updateUserSex(@RequestBody UserProfile userProfile) {
+        logger.info("开始修改用户性别");
+        Map<String, Object> map = new HashMap<>();
+        userService.updateUserSexById(userProfile);
+        map.put("code", "400");
+        map.put("message", "success");
+        return map;
+    }
+
+    /**
+     * 修改用户个性签名
+     *
+     * @param userProfile
+     * @return
+     */
+    @PutMapping("user/bio")
+    public Map<String, Object> updateUserBio(@RequestBody UserProfile userProfile) {
+        logger.info("开始修改用户个性签名");
+        Map<String, Object> map = new HashMap<>();
+        userService.updateUserBioById(userProfile);
+        map.put("code", "400");
+        map.put("message", "success");
+        return map;
+    }
+
+    /**
+     * 修改用户swaggerid
+     *
+     * @param userProfile
+     * @return
+     */
+    @PutMapping("user/swaggerId")
+    public Map<String, Object> updateUserSwaggerId(@RequestBody UserProfile userProfile) {
+        logger.info("开始修改用户SwaggerId");
+        Map<String, Object> map = new HashMap<>();
+        userService.updateUserSwaggerIdById(userProfile);
+        map.put("code", "400");
+        map.put("message", "success");
+        return map;
+    }
+
+    /**
      * 用户退出
      *
      * @param loginId

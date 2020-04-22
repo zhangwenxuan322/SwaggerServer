@@ -7,12 +7,16 @@ indi/swagger/controller/NearbyController.class
 indi/swagger/SwaggerApplication.class
 indi/swagger/service/impl/NearbyServiceImpl.class
 indi/swagger/service/VerCodeService.class
+indi/swagger/service/FriendReqService.class
 indi/swagger/constant/Constant.class
+indi/swagger/controller/FriendReqController.class
 indi/swagger/util/EncryptionUtil.class
+indi/swagger/entity/FriendRequest.class
 indi/swagger/service/FriendService.class
 indi/swagger/entity/UserLoginInfo.class
 indi/swagger/mapper/FriendMapper.class
 indi/swagger/mapper/NearbyMapper.class
+indi/swagger/service/impl/FriendReqServiceImpl.class
 indi/swagger/controller/VerCodeController.class
 indi/swagger/mapper/UserMapper.class
 indi/swagger/entity/VerCode.class
@@ -20,6 +24,7 @@ indi/swagger/entity/UserProfile.class
 indi/swagger/controller/FileController.class
 indi/swagger/service/impl/VerCodeServiceImpl.class
 indi/swagger/service/NearbyService.class
+indi/swagger/mapper/FriendReqMapper.class
 indi/swagger/entity/FriendsManager.class
 indi/swagger/controller/UserController.class
 indi/swagger/mapper/VerCodeMapper.class

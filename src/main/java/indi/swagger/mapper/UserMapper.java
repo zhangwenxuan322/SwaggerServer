@@ -11,6 +11,7 @@ import org.springframework.stereotype.Repository;
 public interface UserMapper {
     /**
      * 根据手机号查询用户信息
+     *
      * @param phone
      * @return
      */
@@ -18,6 +19,7 @@ public interface UserMapper {
 
     /**
      * 根据SwaggerId查询用户信息
+     *
      * @param swaggerId
      * @return
      */
@@ -25,6 +27,7 @@ public interface UserMapper {
 
     /**
      * 根据id查询用户信息
+     *
      * @param userId
      * @return
      */
@@ -32,18 +35,21 @@ public interface UserMapper {
 
     /**
      * 新增用户
+     *
      * @param userProfile
      */
     void insertUser(UserProfile userProfile);
 
     /**
      * 新增用户登录信息
+     *
      * @param userLoginInfo
      */
     void insertUserLoginInfo(UserLoginInfo userLoginInfo);
 
     /**
      * 根据用户id查询用户登录信息
+     *
      * @param userId
      * @return
      */
@@ -51,6 +57,7 @@ public interface UserMapper {
 
     /**
      * 根据id查询用户登录信息
+     *
      * @param loginId
      * @return
      */
@@ -58,18 +65,42 @@ public interface UserMapper {
 
     /**
      * 根据id更新用户登录信息
+     *
      * @param userProfile
      */
     void updateUserById(UserProfile userProfile);
 
     /**
      * 根据id更新用户密码
+     *
      * @param userProfile
      */
     void updateUserPasswordById(UserProfile userProfile);
 
     /**
+     * 根据id更新用户SwaggerId
+     *
+     * @param userProfile
+     */
+    void updateUserSwaggerIdById(UserProfile userProfile);
+
+    /**
+     * 根据id更新用户性别
+     *
+     * @param userProfile
+     */
+    void updateUserSexById(UserProfile userProfile);
+
+    /**
+     * 根据id更新用户个性签名
+     *
+     * @param userProfile
+     */
+    void updateUserBioById(UserProfile userProfile);
+
+    /**
      * 更新用户登录信息
+     *
      * @param userLoginInfo
      */
     void updateUserLoginInfoById(UserLoginInfo userLoginInfo);

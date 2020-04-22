@@ -73,6 +73,24 @@
          where login_id=#{loginId}
     </update>
 
+    <update id="updateUserSwaggerIdById" parameterType="indi.swagger.entity.UserProfile">
+        update t_user_profile
+           set user_swagger_id=#{userSwaggerId}
+         where user_id=#{userId}
+    </update>
+
+    <update id="updateUserSexById" parameterType="indi.swagger.entity.UserProfile">
+        update t_user_profile
+           set user_sex=#{userSex}
+         where user_id=#{userId}
+    </update>
+
+    <update id="updateUserBioById" parameterType="indi.swagger.entity.UserProfile">
+        update t_user_profile
+           set user_bio=#{userBio}
+         where user_id=#{userId}
+    </update>
+
     <select id="selectUserByPhone" resultType="indi.swagger.entity.UserProfile" parameterType="string">
         <include refid="selectUser"></include>
         where user_phone=#{phone}
