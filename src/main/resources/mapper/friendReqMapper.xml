@@ -2,4 +2,25 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="indi.swagger.mapper.FriendReqMapper">
 
+    <insert id="insertRequestInfo" parameterType="map">
+        insert into t_friend_request(req_main_user_id, req_sub_user_id, req_msg, req_code)
+             values (#{mainId}, #{subId}, #{msg}, 0)
+    </insert>
+
+    <update id="updateRequestInfo" parameterType="map">
+        update t_friend_request
+           set req_code = #{reqCode}
+         where req_id = #{reqId}
+    </update>
+
+    <select id="selectRequestByMainAndSubId" resultType="indi.swagger.entity.FriendRequest" parameterType="map">
+        select req_id as reqId,
+               req_main_user_id as reqMainId,
+               req_sub_user_id as reqSubId,
+               req_msg as reqMsg,
+               req_code as reqCode
+          from t_friend_request
+         where req_main_user_id = #{mainId}
+           and req_sub_user_id = #{subId}
+    </select>
 </mapper>
