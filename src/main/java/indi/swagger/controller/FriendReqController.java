@@ -5,11 +5,10 @@ import indi.swagger.service.FriendReqService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -55,5 +54,33 @@ public class FriendReqController {
             resMap.put("message", "success");
         }
         return resMap;
+    }
+
+    /**
+     * 根据主用户获取所有待处理的请求信息
+     *
+     * @param mainId
+     * @return
+     */
+    @GetMapping("request/list")
+    public List<FriendRequest> getRequestList(@RequestParam int mainId) {
+        logger.info("查询未处理请求，查询用户id：" + mainId);
+        return friendReqService.selectAllReqsByMain(mainId);
+    }
+
+    /**
+     * 更新好友请求状态
+     *
+     * @param friendRequest
+     * @return
+     */
+    @PutMapping("request/operation")
+    public Map<String, Object> updateRequestStatus(@RequestBody FriendRequest friendRequest) {
+        logger.info("更新请求状态，请求：" + friendRequest);
+        Map<String, Object> map = new HashMap<>();
+        friendReqService.updateRequestInfo(friendRequest);
+        map.put("code", "200");
+        map.put("message", "success");
+        return map;
     }
 }

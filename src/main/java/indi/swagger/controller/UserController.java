@@ -71,6 +71,7 @@ public class UserController {
 
     /**
      * 根据id查询用户信息
+     *
      * @param id
      * @return
      */
@@ -200,13 +201,14 @@ public class UserController {
         } else {
             map.put("code", "404");
             map.put("message", "user_not_exist");
-            logger.info("用不存在，修改失败");
+            logger.info("用户不存在，修改失败");
         }
         return map;
     }
 
     /**
      * 用户退出
+     *
      * @param loginId
      * @return
      */

@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -31,6 +32,14 @@ public class FriendReqServiceImpl implements FriendReqService {
         map.put("mainId", friendRequest.getReqMainId());
         map.put("subId", friendRequest.getReqSubId());
         return friendReqMapper.selectRequestByMainAndSubId(map);
+    }
+
+    @Override
+    public List<FriendRequest> selectAllReqsByMain(int mainId) {
+        logger.info("调用查询所有未处理请求服务");
+        Map<String, Object> map = new HashMap<>();
+        map.put("mainId", mainId);
+        return friendReqMapper.selectAllReqsByMain(map);
     }
 
     @Override

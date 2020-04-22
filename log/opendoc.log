@@ -43,3 +43,56 @@
 2020-04-22 15:12:37.651 - INFO  [extShutdownHook] c.ExecutorConfigurationSupport : Shutting down ExecutorService 'applicationTaskExecutor'
 2020-04-22 15:12:37.654 - INFO  [extShutdownHook] c.z.h.HikariDataSource         : HikariPool-1 - Shutdown initiated...
 2020-04-22 15:12:37.669 - INFO  [extShutdownHook] c.z.h.HikariDataSource         : HikariPool-1 - Shutdown completed.
+2020-04-22 15:46:18.290 - WARN  [           main] o.s.b.StartupInfoLogger        : InetAddress.getLocalHost().getHostName() took 5003 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-22 15:46:13.283 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting SwaggerApplication on Oscar-MacBook-Pro.local with PID 25009 (/Users/zhangwenxuan/IdeaProjects/Swagger/target/classes started by zhangwenxuan in /Users/zhangwenxuan/IdeaProjects/Swagger)
+2020-04-22 15:46:23.307 - INFO  [           main] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2020-04-22 15:46:24.502 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2020-04-22 15:46:24.514 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-22 15:46:24.514 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2020-04-22 15:46:24.515 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-22 15:46:24.614 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2020-04-22 15:46:24.614 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1206 ms
+2020-04-22 15:46:25.210 - INFO  [           main] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-22 15:46:25.416 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2020-04-22 15:46:25.450 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path '/swagger'
+2020-04-22 15:46:25.454 - INFO  [           main] o.s.b.StartupInfoLogger        : Started SwaggerApplication in 27.635 seconds (JVM running for 44.04)
+2020-04-22 15:46:40.053 - INFO  [nio-8080-exec-1] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-22 15:46:40.054 - INFO  [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2020-04-22 15:46:40.064 - INFO  [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 10 ms
+2020-04-22 15:46:40.216 - INFO  [nio-8080-exec-1] i.s.c.FriendReqController      : 开始发布好友请求，信息：FriendRequest{reqId=0, reqMainId=3, reqSubId=5, reqMsg='内部测试', reqCode=0}
+2020-04-22 15:46:40.221 - INFO  [nio-8080-exec-1] i.s.s.i.FriendReqServiceImpl   : 调用查询好友请求服务
+2020-04-22 15:46:40.246 - INFO  [nio-8080-exec-1] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2020-04-22 15:46:40.883 - INFO  [nio-8080-exec-1] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2020-04-22 15:46:40.960 - INFO  [nio-8080-exec-1] i.s.s.i.FriendReqServiceImpl   : 调用新增好友请求服务
+2020-04-22 15:46:43.638 - INFO  [nio-8080-exec-2] i.s.c.FriendReqController      : 开始发布好友请求，信息：FriendRequest{reqId=0, reqMainId=3, reqSubId=6, reqMsg='内部测试', reqCode=0}
+2020-04-22 15:46:43.639 - INFO  [nio-8080-exec-2] i.s.s.i.FriendReqServiceImpl   : 调用查询好友请求服务
+2020-04-22 15:46:43.647 - INFO  [nio-8080-exec-2] i.s.s.i.FriendReqServiceImpl   : 调用新增好友请求服务
+2020-04-22 15:46:52.735 - WARN  [nio-8080-exec-3] stractHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2020-04-22 15:55:21.511 - INFO  [extShutdownHook] c.ExecutorConfigurationSupport : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-22 15:55:21.515 - INFO  [extShutdownHook] c.z.h.HikariDataSource         : HikariPool-1 - Shutdown initiated...
+2020-04-22 15:55:21.526 - INFO  [extShutdownHook] c.z.h.HikariDataSource         : HikariPool-1 - Shutdown completed.
+2020-04-22 16:04:16.194 - WARN  [           main] o.s.b.StartupInfoLogger        : InetAddress.getLocalHost().getHostName() took 5005 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-22 16:04:11.184 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting SwaggerApplication on Oscar-MacBook-Pro.local with PID 25091 (/Users/zhangwenxuan/IdeaProjects/Swagger/target/classes started by zhangwenxuan in /Users/zhangwenxuan/IdeaProjects/Swagger)
+2020-04-22 16:04:21.215 - INFO  [           main] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2020-04-22 16:04:22.351 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2020-04-22 16:04:22.360 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-22 16:04:22.361 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2020-04-22 16:04:22.362 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-22 16:04:22.464 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2020-04-22 16:04:22.464 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1205 ms
+2020-04-22 16:04:23.152 - INFO  [           main] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-22 16:04:23.346 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2020-04-22 16:04:23.385 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path '/swagger'
+2020-04-22 16:04:23.388 - INFO  [           main] o.s.b.StartupInfoLogger        : Started SwaggerApplication in 27.644 seconds (JVM running for 44.963)
+2020-04-22 16:04:46.619 - INFO  [nio-8080-exec-1] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-22 16:04:46.620 - INFO  [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2020-04-22 16:04:46.626 - INFO  [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 6 ms
+2020-04-22 16:04:46.732 - INFO  [nio-8080-exec-1] i.s.c.FriendReqController      : 更新请求状态，请求：FriendRequest{reqId=2, reqMainId=3, reqSubId=4, reqMsg='内部测试', reqCode=1}
+2020-04-22 16:04:46.738 - INFO  [nio-8080-exec-1] i.s.s.i.FriendReqServiceImpl   : 调用修改好友请求服务
+2020-04-22 16:04:46.759 - INFO  [nio-8080-exec-1] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2020-04-22 16:04:47.290 - INFO  [nio-8080-exec-1] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2020-04-22 16:04:56.615 - INFO  [nio-8080-exec-2] i.s.c.FriendReqController      : 查询未处理请求，查询用户id：3
+2020-04-22 16:04:56.617 - INFO  [nio-8080-exec-2] i.s.s.i.FriendReqServiceImpl   : 调用查询所有未处理请求服务
+2020-04-22 16:07:51.089 - INFO  [extShutdownHook] c.ExecutorConfigurationSupport : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-22 16:07:51.093 - INFO  [extShutdownHook] c.z.h.HikariDataSource         : HikariPool-1 - Shutdown initiated...
+2020-04-22 16:07:51.113 - INFO  [extShutdownHook] c.z.h.HikariDataSource         : HikariPool-1 - Shutdown completed.

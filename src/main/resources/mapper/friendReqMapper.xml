@@ -23,4 +23,15 @@
          where req_main_user_id = #{mainId}
            and req_sub_user_id = #{subId}
     </select>
+
+    <select id="selectAllReqsByMain" resultType="indi.swagger.entity.FriendRequest" parameterType="map">
+        select req_id as reqId,
+               req_main_user_id as reqMainId,
+               req_sub_user_id as reqSubId,
+               req_msg as reqMsg,
+               req_code as reqCode
+          from t_friend_request
+         where req_main_user_id = #{mainId}
+           and req_code = 0
+    </select>
 </mapper>
