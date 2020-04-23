@@ -52,6 +52,66 @@
   "password": 233
 }
 ```
+#### 修改SwaggerId
+- 请求URL：`/swagger/user/swaggerId`
+- 请求方式：`PUT`
+- 请求参数：
+```json
+{
+	"userId":2,
+	"userName":"friend",
+	"userSex":"男",
+	"userPassword":"123",
+	"userPhone":"13851567613",
+	"userSwaggerId":"friend",
+	"userPortrait":"",
+	"userBio":null,
+	"userCreateTime":null,
+	"userModifyTime":null,
+	"userLoginInfoId":0,
+	"userToken":null
+}
+```
+#### 修改性别
+- 请求URL：`/swagger/user/sex`
+- 请求方式：`PUT`
+- 请求参数：
+```json
+{
+	"userId":2,
+	"userName":"friend",
+	"userSex":"女",
+	"userPassword":"123",
+	"userPhone":"13851567613",
+	"userSwaggerId":"friend",
+	"userPortrait":"",
+	"userBio":null,
+	"userCreateTime":null,
+	"userModifyTime":null,
+	"userLoginInfoId":0,
+	"userToken":null
+}
+```
+#### 修改个性签名
+- 请求URL：`/swagger/user/bio`
+- 请求方式：`PUT`
+- 请求参数：
+```json
+{
+	"userId":2,
+	"userName":"friend",
+	"userSex":"女",
+	"userPassword":"123",
+	"userPhone":"13851567613",
+	"userSwaggerId":"friend",
+	"userPortrait":"",
+	"userBio":"内部测试",
+	"userCreateTime":null,
+	"userModifyTime":null,
+	"userLoginInfoId":0,
+	"userToken":null
+}
+```
 #### 登出
 - 请求URL：`/swagger/user/unauth`
 - 请求方式：`POST`
@@ -124,5 +184,36 @@
 	"groupName": "不解释",
 	"createTime": null,
 	"modifyTime": null
+}
+```
+### 好友请求
+#### 发布请求
+- 请求URL：`/swagger/request`
+- 请求方式：`POST`
+- 请求参数：
+```json
+{
+	"reqId": 0,
+	"reqMainId": 3,
+	"reqSubId": 6,
+	"reqMsg": "内部测试",
+	"reqCode": 0
+}
+```
+#### 查询请求列表
+- 请求URL：`/swagger/request/list`
+- 请求方式：`GET`
+- 请求参数：`mainId=3`
+#### 更新请求信息
+- 请求URL：`/swagger/request/operation`
+- 请求方式：`PUT`
+- 请求参数：
+```json
+{
+	"reqId": 2,
+	"reqMainId": 3,
+	"reqSubId": 4,
+	"reqMsg": "内部测试",
+	"reqCode": 1
 }
 ```
