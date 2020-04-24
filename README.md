@@ -230,3 +230,7 @@
     "apkDesc": "描述"
 }
 ```
+#### 获取最新Apk
+- 请求URL：`/swagger/apk/latest`
+- 请求方式：`GET`
+- 请求参数：无

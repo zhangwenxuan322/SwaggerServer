@@ -1,39 +1,16 @@
-2020-04-10 20:16:08.276 -ERROR  [nio-8080-exec-1] o.a.j.l.DirectJDKLog           : Servlet.service() for servlet [dispatcherServlet] in context with path [/swagger] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
-### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'mainUserId' in 'where clause'
-### The error may exist in file [/Users/zhangwenxuan/IdeaProjects/Swagger/target/classes/mapper/friendMapper.xml]
-### The error may involve indi.swagger.mapper.FriendMapper.selectFriendsByMainAndFriend-Inline
-### The error occurred while setting parameters
-### SQL: select id as id,                main_user_id as mainUserId,                friend_user_id as friendUserId,                remark_name as remarkName,                group_name as groupName,                create_time as createTime,                modify_time as modifyTime           from t_user_friend          where mainUserId=?            and friend_user_id=?
-### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'mainUserId' in 'where clause'
-; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'mainUserId' in 'where clause'] with root cause
-java.sql.SQLSyntaxErrorException: Unknown column 'mainUserId' in 'where clause'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.19.jar:8.0.19]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.19.jar:8.0.19]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.19.jar:8.0.19]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.19.jar:8.0.19]
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44) ~[HikariCP-3.4.2.jar:?]
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java) ~[HikariCP-3.4.2.jar:?]
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63) ~[mybatis-3.4.6.jar:3.4.6]
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79) ~[mybatis-3.4.6.jar:3.4.6]
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63) ~[mybatis-3.4.6.jar:3.4.6]
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326) ~[mybatis-3.4.6.jar:3.4.6]
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.4.6.jar:3.4.6]
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) ~[mybatis-3.4.6.jar:3.4.6]
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83) ~[mybatis-3.4.6.jar:3.4.6]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148) ~[mybatis-3.4.6.jar:3.4.6]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141) ~[mybatis-3.4.6.jar:3.4.6]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77) ~[mybatis-3.4.6.jar:3.4.6]
+2020-04-24 15:51:43.280 -ERROR  [nio-8080-exec-5] o.a.j.l.DirectJDKLog           : Servlet.service() for servlet [dispatcherServlet] in context with path [/swagger] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2] with root cause
+org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:81) ~[mybatis-3.4.6.jar:3.4.6]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_162]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_162]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_162]
 	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_162]
 	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433) ~[mybatis-spring-1.3.2.jar:1.3.2]
-	at com.sun.proxy.$Proxy82.selectOne(Unknown Source) ~[?:?]
+	at com.sun.proxy.$Proxy80.selectOne(Unknown Source) ~[?:?]
 	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166) ~[mybatis-spring-1.3.2.jar:1.3.2]
 	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:83) ~[mybatis-3.4.6.jar:3.4.6]
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59) ~[mybatis-3.4.6.jar:3.4.6]
-	at com.sun.proxy.$Proxy83.selectFriendsByMainAndFriend(Unknown Source) ~[?:?]
+	at com.sun.proxy.$Proxy81.selectLatestApk(Unknown Source) ~[?:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_162]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_162]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_162]
@@ -44,9 +21,9 @@ java.sql.SQLSyntaxErrorException: Unknown column 'mainUserId' in 'where clause'
 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.2.3.RELEASE.jar:5.2.3.RELEASE]
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
-	at com.sun.proxy.$Proxy84.selectFriendsByMainAndFriend(Unknown Source) ~[?:?]
-	at indi.swagger.service.impl.FriendServiceImpl.selectFriendsByMainAndFriend(FriendServiceImpl.java:28) ~[classes/:?]
-	at indi.swagger.controller.FriendController.friendFilter(FriendController.java:38) ~[classes/:?]
+	at com.sun.proxy.$Proxy82.selectLatestApk(Unknown Source) ~[?:?]
+	at indi.swagger.service.impl.AppPackageServiceImpl.selectLatestApk(AppPackageServiceImpl.java:31) ~[classes/:?]
+	at indi.swagger.controller.AppPackageController.getLatestApk(AppPackageController.java:83) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_162]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_162]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_162]

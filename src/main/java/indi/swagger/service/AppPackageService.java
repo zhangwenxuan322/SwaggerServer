@@ -9,4 +9,11 @@ public interface AppPackageService {
      * @param appPackage
      */
     void insertPackageInfo(AppPackage appPackage);
+
+    /**
+     * 获取最新Apk
+     *
+     * @return
+     */
+    AppPackage selectLatestApk();
 }

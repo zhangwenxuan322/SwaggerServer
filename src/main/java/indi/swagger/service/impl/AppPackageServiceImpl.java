@@ -25,4 +25,9 @@ public class AppPackageServiceImpl implements AppPackageService {
         logger.info("调用apk上传服务");
         appPackageMapper.insertPackageInfo(appPackage);
     }
+
+    @Override
+    public AppPackage selectLatestApk() {
+        return appPackageMapper.selectLatestApk().get(0);
+    }
 }

@@ -6,4 +6,14 @@
         insert into t_app_package(apk_code, apk_name, apk_desc)
              values (#{apkCode}, #{apkName}, #{apkDesc})
     </insert>
+
+    <select id="selectLatestApk" resultType="indi.swagger.entity.AppPackage">
+        select apk_id as apkId,
+               apk_code as apkCode,
+               apk_name as apkName,
+               apk_desc as apkDesc
+          from t_app_package
+      order by apk_id
+          desc
+    </select>
 </mapper>
