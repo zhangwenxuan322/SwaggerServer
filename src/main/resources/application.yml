@@ -19,5 +19,6 @@ logging:
   config: classpath:log4j2.yml
 upload:
   file:
-    path: /home/admin/portrait
+    portrait-path: /home/admin/portrait
+    apk-path: /home/admin/apk
 #    path: /Users/zhangwenxuan/Desktop/upload

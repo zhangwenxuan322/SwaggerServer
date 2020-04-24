@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04d8deb3-5c20-4b57-84bc-4daefdff3bb9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/controller/AppPackageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/entity/AppPackage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/mapper/AppPackageMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/service/AppPackageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/service/impl/AppPackageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/appPackageMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/opendoc.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/opendoc.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-indi.swagger.SwaggerApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-indi.swagger.SwaggerApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/indi.swagger.SwaggerApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/indi.swagger.SwaggerApplicationTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/swagger-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/swagger-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/swagger-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/swagger-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/indi/swagger/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/controller/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +19,20 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -64,7 +80,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RunManager" selected="Spring Boot.SwaggerApplication">
@@ -278,7 +294,8 @@
       <workItem from="1587517524726" duration="12542000" />
       <workItem from="1587546296828" duration="2312000" />
       <workItem from="1587560185867" duration="179000" />
-      <workItem from="1587603709363" duration="578000" />
+      <workItem from="1587603709363" duration="5155000" />
+      <workItem from="1587690442584" duration="2331000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交">
       <created>1582095517171</created>
@@ -574,7 +591,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587560233745</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="新增相应的接口文档">
+      <created>1587604391287</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1587604391287</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -612,7 +636,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="新增用户登录后设备信息的保存" />
     <MESSAGE value="修改密码Api接口" />
     <MESSAGE value="头像上传下载本地测试" />
     <MESSAGE value="文件控制部署至服务器" />
@@ -637,7 +660,8 @@
     <MESSAGE value="新增发布好友请求接口" />
     <MESSAGE value="完成好友请求接口编写" />
     <MESSAGE value="新增用户信息修改接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增用户信息修改接口" />
+    <MESSAGE value="新增相应的接口文档" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增相应的接口文档" />
   </component>
   <component name="WindowStateProjectService">
     <state x="992" y="343" key="#Deploy_to_Host" timestamp="1582871306309">
@@ -665,11 +689,11 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="880" y="397" key="#SQL_Dialects/0.23.2560.1417@0.23.2560.1417" timestamp="1584947157830" />
-    <state x="615" y="266" key="#com.intellij.ide.util.MemberChooser" timestamp="1587549924578">
+    <state x="615" y="266" key="#com.intellij.ide.util.MemberChooser" timestamp="1587710724709">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="1093" y="453" key="#com.intellij.ide.util.MemberChooser/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1583907772450" />
-    <state x="615" y="266" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1587549924578" />
+    <state x="615" y="266" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1587710724709" />
     <state x="1093" y="453" key="#com.intellij.ide.util.MemberChooser/0.23.2560.1417@0.23.2560.1417" timestamp="1586529774193" />
     <state x="481" y="311" width="477" height="304" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1587537702227">
       <screen x="0" y="23" width="1440" height="877" />
@@ -679,11 +703,11 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1018" y="484" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1580741276494" />
-    <state x="783" y="239" key="CommitChangelistDialog2" timestamp="1587560230436">
-      <screen x="0" y="23" width="2560" height="1417" />
+    <state x="440" y="23" key="CommitChangelistDialog2" timestamp="1587604388666">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="783" y="239" key="CommitChangelistDialog2/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1583910937520" />
-    <state x="440" y="23" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1587545132410" />
+    <state x="440" y="23" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1587604388666" />
     <state x="783" y="239" key="CommitChangelistDialog2/0.23.2560.1417@0.23.2560.1417" timestamp="1587560230436" />
     <state x="100" y="123" width="2360" height="1217" key="DiffContextDialog" timestamp="1582957914843">
       <screen x="0" y="23" width="2560" height="1417" />
@@ -741,29 +765,29 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="308" y="203" key="IDE.errors.dialog/0.23.1440.877@0.23.1440.877" timestamp="1587546331882" />
-    <state x="332" y="82" key="NewModule_or_Project.wizard" timestamp="1586932631843">
+    <state x="332" y="82" key="NewModule_or_Project.wizard" timestamp="1587611735594">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="332" y="82" key="NewModule_or_Project.wizard/0.23.1440.877@0.23.1440.877" timestamp="1586932631843" />
-    <state x="222" y="101" key="SettingsEditor" timestamp="1587546244849">
+    <state x="332" y="82" key="NewModule_or_Project.wizard/0.23.1440.877@0.23.1440.877" timestamp="1587611735594" />
+    <state x="222" y="101" key="SettingsEditor" timestamp="1587610658399">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="222" y="101" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1587546244849" />
+    <state x="222" y="101" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1587610658399" />
     <state x="768" y="312" key="SettingsEditor/0.23.2560.1417@0.23.2560.1417" timestamp="1584885681317" />
-    <state x="880" y="466" key="Vcs.Push.Dialog.v2" timestamp="1587560239402">
-      <screen x="0" y="23" width="2560" height="1417" />
+    <state x="320" y="198" key="Vcs.Push.Dialog.v2" timestamp="1587604395443">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="880" y="466" key="Vcs.Push.Dialog.v2/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1583910939919" />
-    <state x="495" y="297" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1587545135181" />
+    <state x="320" y="198" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1587604395443" />
     <state x="880" y="466" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1587560239402" />
     <state x="961" y="512" key="git4idea.merge.GitPullDialog" timestamp="1582957825857">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="961" y="512" key="git4idea.merge.GitPullDialog/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1582957825857" />
-    <state x="97" y="86" key="new project wizard" timestamp="1587450386751">
+    <state x="97" y="86" key="new project wizard" timestamp="1587611604620">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="97" y="86" key="new project wizard/0.23.1440.877@0.23.1440.877" timestamp="1587450386751" />
+    <state x="97" y="86" key="new project wizard/0.23.1440.877@0.23.1440.877" timestamp="1587611604620" />
     <state x="532" y="224" width="670" height="158" key="search.everywhere.popup" timestamp="1587550146416">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

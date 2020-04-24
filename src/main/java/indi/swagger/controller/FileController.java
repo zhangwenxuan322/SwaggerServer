@@ -1,5 +1,7 @@
 package indi.swagger.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.http.MediaType;
@@ -25,7 +27,8 @@ import java.util.Map;
  **/
 @RestController
 public class FileController {
-    @Value("${upload.file.path}")
+    Logger logger = LoggerFactory.getLogger(FileController.class);
+    @Value("${upload.file.portrait-path}")
     private String uploadPathStr;
 
     /**
@@ -37,6 +40,7 @@ public class FileController {
      */
     @PostMapping("user/portrait")
     public Map<String, Object> upload(@RequestParam MultipartFile file, @RequestParam String filename) {
+        logger.info("开始上传头像，文件名：" + filename);
         Map<String, Object> map = new HashMap<>();
         if (file == null || file.isEmpty() || filename == null || filename.isEmpty()) {
             map.put("code", "404");
@@ -67,6 +71,7 @@ public class FileController {
      */
     @GetMapping("user/portrait/{filename}")
     public ResponseEntity<FileSystemResource> download(@PathVariable(value = "filename") String filename) {
+        logger.info("开始下载头像，文件名：" + filename);
         if (filename == null || filename.isEmpty()) {
             return null;
         }
