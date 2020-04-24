@@ -10,16 +10,16 @@ public class AppPackage {
     private int apkId;
     private String apkCode;
     private String apkName;
-    private String apk_desc;
+    private String apkDesc;
 
     public AppPackage() {
     }
 
-    public AppPackage(int apkId, String apkCode, String apkName, String apk_desc) {
+    public AppPackage(int apkId, String apkCode, String apkName, String apkDesc) {
         this.apkId = apkId;
         this.apkCode = apkCode;
         this.apkName = apkName;
-        this.apk_desc = apk_desc;
+        this.apkDesc = apkDesc;
     }
 
     public int getApkId() {
@@ -46,12 +46,12 @@ public class AppPackage {
         this.apkName = apkName;
     }
 
-    public String getApk_desc() {
-        return apk_desc;
+    public String getApkDesc() {
+        return apkDesc;
     }
 
-    public void setApk_desc(String apk_desc) {
-        this.apk_desc = apk_desc;
+    public void setApkDesc(String apkDesc) {
+        this.apkDesc = apkDesc;
     }
 
     @Override
@@ -60,7 +60,7 @@ public class AppPackage {
                 "apkId=" + apkId +
                 ", apkCode='" + apkCode + '\'' +
                 ", apkName='" + apkName + '\'' +
-                ", apk_desc='" + apk_desc + '\'' +
+                ", apkDesc='" + apkDesc + '\'' +
                 '}';
     }
 }

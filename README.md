@@ -217,3 +217,16 @@
 	"reqCode": 1
 }
 ```
+### Apk
+#### Apk上传
+- 请求URL：`/swagger/apk`
+- 请求方式：`POST`
+- 请求参数：
+```json
+{
+    "apk": "file",
+    "apkCode": "v1.0.0",
+    "apkName": "test.apk",
+    "apkDesc": "描述"
+}
+```

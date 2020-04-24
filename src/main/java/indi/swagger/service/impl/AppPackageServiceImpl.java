@@ -1,5 +1,6 @@
 package indi.swagger.service.impl;
 
+import indi.swagger.entity.AppPackage;
 import indi.swagger.mapper.AppPackageMapper;
 import indi.swagger.service.AppPackageService;
 import org.slf4j.Logger;
@@ -18,4 +19,10 @@ public class AppPackageServiceImpl implements AppPackageService {
     Logger logger = LoggerFactory.getLogger(AppPackageService.class);
     @Autowired
     AppPackageMapper appPackageMapper;
+
+    @Override
+    public void insertPackageInfo(AppPackage appPackage) {
+        logger.info("调用apk上传服务");
+        appPackageMapper.insertPackageInfo(appPackage);
+    }
 }
