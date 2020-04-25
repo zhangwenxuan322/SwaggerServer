@@ -122,6 +122,12 @@ public class UserServiceImpl implements UserService {
         userMapper.updateUserBioById(userProfile);
     }
 
+    @Override
+    public void updateUserPortraitById(UserProfile userProfile) {
+        logger.info("调用用户头像修改服务");
+        userMapper.updateUserPortraitById(userProfile);
+    }
+
     @Transactional
     @Override
     public void logout(int loginId) {

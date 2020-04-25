@@ -239,6 +239,22 @@ public class UserController {
     }
 
     /**
+     * 修改用户头像
+     *
+     * @param userProfile
+     * @return
+     */
+    @PutMapping("user/portraitChange")
+    public Map<String, Object> updateUserPortrait(@RequestBody UserProfile userProfile) {
+        logger.info("开始修改用户头像");
+        Map<String, Object> map = new HashMap<>();
+        userService.updateUserPortraitById(userProfile);
+        map.put("code", "400");
+        map.put("message", "success");
+        return map;
+    }
+
+    /**
      * 修改用户swaggerid
      *
      * @param userProfile

@@ -99,6 +99,13 @@ public interface UserMapper {
     void updateUserBioById(UserProfile userProfile);
 
     /**
+     * 根据id更新用户头像
+     *
+     * @param userProfile
+     */
+    void updateUserPortraitById(UserProfile userProfile);
+
+    /**
      * 更新用户登录信息
      *
      * @param userLoginInfo

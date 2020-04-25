@@ -75,8 +75,14 @@
 
     <update id="updateUserSwaggerIdById" parameterType="indi.swagger.entity.UserProfile">
         update t_user_profile
-           set user_swagger_id=#{userSwaggerId}
+           set user_portrait=#{userPortrait}
          where user_id=#{userId}
+    </update>
+
+    <update id="updateUserPortraitById" parameterType="indi.swagger.entity.UserProfile">
+        update t_user_profile
+        set user_swagger_id=#{userSwaggerId}
+        where user_id=#{userId}
     </update>
 
     <update id="updateUserSexById" parameterType="indi.swagger.entity.UserProfile">

@@ -78,6 +78,13 @@ public interface UserService {
     void updateUserBioById(UserProfile userProfile);
 
     /**
+     * 根据id更新用户头像
+     *
+     * @param userProfile
+     */
+    void updateUserPortraitById(UserProfile userProfile);
+
+    /**
      * 用户退出
      *
      * @param loginId
