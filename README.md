@@ -112,6 +112,26 @@
 	"userToken":null
 }
 ```
+#### 修改头像
+- 请求URL：`/swagger/user/portraitChange`
+- 请求方式：`PUT`
+- 请求参数：
+```json
+{
+	"userId":2,
+	"userName":"friend",
+	"userSex":"女",
+	"userPassword":"123",
+	"userPhone":"13851567613",
+	"userSwaggerId":"friend",
+	"userPortrait":"ttttttt.png",
+	"userBio":"内部测试",
+	"userCreateTime":null,
+	"userModifyTime":null,
+	"userLoginInfoId":0,
+	"userToken":null
+}
+```
 #### 登出
 - 请求URL：`/swagger/user/unauth`
 - 请求方式：`POST`
