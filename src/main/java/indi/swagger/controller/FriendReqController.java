@@ -2,6 +2,7 @@ package indi.swagger.controller;
 
 import indi.swagger.entity.FriendRequest;
 import indi.swagger.service.FriendReqService;
+import indi.swagger.service.FriendService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +23,8 @@ public class FriendReqController {
     Logger logger = LoggerFactory.getLogger(FriendReqController.class);
     @Autowired
     FriendReqService friendReqService;
+    @Autowired
+    FriendService friendService;
 
     /**
      * 发布好友请求
@@ -79,6 +82,9 @@ public class FriendReqController {
         logger.info("更新请求状态，请求：" + friendRequest);
         Map<String, Object> map = new HashMap<>();
         friendReqService.updateRequestInfo(friendRequest);
+        if (friendRequest.getReqCode() == 1) {
+            friendService.createFriendConnection(friendRequest.getReqMainId(), friendRequest.getReqSubId());
+        }
         map.put("code", "200");
         map.put("message", "success");
         return map;

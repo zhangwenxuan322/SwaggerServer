@@ -1,43 +1,40 @@
-2020-04-25 12:12:10.331 - WARN  [           main] o.s.b.StartupInfoLogger        : InetAddress.getLocalHost().getHostName() took 5004 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
-2020-04-25 12:12:05.324 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting SwaggerApplication on Oscar-MacBook-Pro.local with PID 41934 (/Users/zhangwenxuan/IdeaProjects/Swagger/target/classes started by zhangwenxuan in /Users/zhangwenxuan/IdeaProjects/Swagger)
-2020-04-25 12:12:15.358 - INFO  [           main] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
-2020-04-25 12:12:16.494 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
-2020-04-25 12:12:16.505 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
-2020-04-25 12:12:16.506 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
-2020-04-25 12:12:16.507 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.30]
-2020-04-25 12:12:16.612 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
-2020-04-25 12:12:16.612 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1204 ms
-2020-04-25 12:12:17.328 - INFO  [           main] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
-2020-04-25 12:12:17.562 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
-2020-04-25 12:12:17.596 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path '/swagger'
-2020-04-25 12:12:17.600 - INFO  [           main] o.s.b.StartupInfoLogger        : Started SwaggerApplication in 27.74 seconds (JVM running for 44.195)
-2020-04-25 12:12:33.812 - INFO  [nio-8080-exec-1] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-04-25 12:12:33.813 - INFO  [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
-2020-04-25 12:12:33.827 - INFO  [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 14 ms
-2020-04-25 12:12:34.018 - INFO  [nio-8080-exec-1] i.s.c.UserController           : 开始修改用户头像
-2020-04-25 12:12:34.145 - INFO  [nio-8080-exec-1] i.s.s.i.UserServiceImpl        : 调用用户头像修改服务
-2020-04-25 12:12:34.420 - INFO  [nio-8080-exec-1] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
-2020-04-25 12:12:35.335 - INFO  [nio-8080-exec-1] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
-2020-04-25 12:13:47.260 - INFO  [extShutdownHook] c.ExecutorConfigurationSupport : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-04-25 12:13:47.266 - INFO  [extShutdownHook] c.z.h.HikariDataSource         : HikariPool-1 - Shutdown initiated...
-2020-04-25 12:13:47.283 - INFO  [extShutdownHook] c.z.h.HikariDataSource         : HikariPool-1 - Shutdown completed.
-2020-04-25 12:14:29.183 - WARN  [           main] o.s.b.StartupInfoLogger        : InetAddress.getLocalHost().getHostName() took 5002 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
-2020-04-25 12:14:24.178 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting SwaggerApplication on Oscar-MacBook-Pro.local with PID 41959 (/Users/zhangwenxuan/IdeaProjects/Swagger/target/classes started by zhangwenxuan in /Users/zhangwenxuan/IdeaProjects/Swagger)
-2020-04-25 12:14:34.197 - INFO  [           main] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
-2020-04-25 12:14:35.182 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
-2020-04-25 12:14:35.191 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
-2020-04-25 12:14:35.193 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
-2020-04-25 12:14:35.194 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.30]
-2020-04-25 12:14:35.298 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
-2020-04-25 12:14:35.299 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1065 ms
-2020-04-25 12:14:36.076 - INFO  [           main] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
-2020-04-25 12:14:36.277 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
-2020-04-25 12:14:36.318 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path '/swagger'
-2020-04-25 12:14:36.322 - INFO  [           main] o.s.b.StartupInfoLogger        : Started SwaggerApplication in 27.491 seconds (JVM running for 43.709)
-2020-04-25 12:14:55.273 - INFO  [nio-8080-exec-1] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-04-25 12:14:55.274 - INFO  [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
-2020-04-25 12:14:55.284 - INFO  [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 10 ms
-2020-04-25 12:14:55.402 - INFO  [nio-8080-exec-1] i.s.c.UserController           : 开始修改用户头像
-2020-04-25 12:14:55.411 - INFO  [nio-8080-exec-1] i.s.s.i.UserServiceImpl        : 调用用户头像修改服务
-2020-04-25 12:14:55.439 - INFO  [nio-8080-exec-1] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
-2020-04-25 12:14:56.009 - INFO  [nio-8080-exec-1] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2020-04-29 09:36:26.295 - WARN  [           main] o.s.b.StartupInfoLogger        : InetAddress.getLocalHost().getHostName() took 5006 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-29 09:36:21.284 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting SwaggerApplication on Oscar-MacBook-Pro.local with PID 63374 (/Users/zhangwenxuan/IdeaProjects/Swagger/target/classes started by zhangwenxuan in /Users/zhangwenxuan/IdeaProjects/Swagger)
+2020-04-29 09:36:31.332 - INFO  [           main] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2020-04-29 09:36:36.175 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2020-04-29 09:36:36.244 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-29 09:36:36.246 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2020-04-29 09:36:36.247 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-29 09:36:36.501 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2020-04-29 09:36:36.502 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5079 ms
+2020-04-29 09:36:37.641 - INFO  [           main] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-29 09:36:37.955 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2020-04-29 09:36:37.993 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path '/swagger'
+2020-04-29 09:36:37.997 - INFO  [           main] o.s.b.StartupInfoLogger        : Started SwaggerApplication in 32.255 seconds (JVM running for 49.235)
+2020-04-29 09:37:29.997 - INFO  [extShutdownHook] c.ExecutorConfigurationSupport : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-29 09:38:10.120 - WARN  [           main] o.s.b.StartupInfoLogger        : InetAddress.getLocalHost().getHostName() took 5005 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-29 09:38:05.112 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting SwaggerApplication on Oscar-MacBook-Pro.local with PID 63391 (/Users/zhangwenxuan/IdeaProjects/Swagger/target/classes started by zhangwenxuan in /Users/zhangwenxuan/IdeaProjects/Swagger)
+2020-04-29 09:38:15.131 - INFO  [           main] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2020-04-29 09:38:15.949 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2020-04-29 09:38:15.957 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-29 09:38:15.957 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2020-04-29 09:38:15.958 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-29 09:38:16.029 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2020-04-29 09:38:16.029 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 860 ms
+2020-04-29 09:38:16.640 - INFO  [           main] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-29 09:38:16.818 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2020-04-29 09:38:16.848 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path '/swagger'
+2020-04-29 09:38:16.854 - INFO  [           main] o.s.b.StartupInfoLogger        : Started SwaggerApplication in 27.069 seconds (JVM running for 43.242)
+2020-04-29 09:38:26.082 - INFO  [nio-8080-exec-1] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-29 09:38:26.082 - INFO  [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2020-04-29 09:38:26.090 - INFO  [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 8 ms
+2020-04-29 09:38:26.206 - INFO  [nio-8080-exec-1] i.s.c.FriendReqController      : 更新请求状态，请求：FriendRequest{reqId=3, reqMainId=3, reqSubId=5, reqMsg='内部测试', reqCode=1}
+2020-04-29 09:38:26.212 - INFO  [nio-8080-exec-1] i.s.s.i.FriendReqServiceImpl   : 调用修改好友请求服务
+2020-04-29 09:38:26.238 - INFO  [nio-8080-exec-1] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2020-04-29 09:38:26.868 - INFO  [nio-8080-exec-1] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2020-04-29 09:38:27.045 - INFO  [nio-8080-exec-1] i.s.s.i.FriendServiceImpl      : 调用好友关系创建服务
+2020-04-29 09:38:52.346 - INFO  [nio-8080-exec-2] i.s.c.FriendReqController      : 更新请求状态，请求：FriendRequest{reqId=4, reqMainId=3, reqSubId=6, reqMsg='内部测试', reqCode=2}
+2020-04-29 09:38:52.347 - INFO  [nio-8080-exec-2] i.s.s.i.FriendReqServiceImpl   : 调用修改好友请求服务
+2020-04-29 09:39:14.036 - INFO  [extShutdownHook] c.ExecutorConfigurationSupport : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-29 09:39:14.043 - INFO  [extShutdownHook] c.z.h.HikariDataSource         : HikariPool-1 - Shutdown initiated...
+2020-04-29 09:39:14.049 - INFO  [extShutdownHook] c.z.h.HikariDataSource         : HikariPool-1 - Shutdown completed.
