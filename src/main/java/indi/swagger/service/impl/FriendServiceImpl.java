@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -63,5 +64,11 @@ public class FriendServiceImpl implements FriendService {
         map.put("mainUserId", friendsManager.getFriendUserId());
         map.put("friendUserId", friendsManager.getMainUserId());
         friendMapper.deleteFriends(map);
+    }
+
+    @Override
+    public List<FriendsManager> getFriendList(int userId) {
+        logger.info("开始获取好友列表服务");
+        return friendMapper.getFriendList(userId);
     }
 }

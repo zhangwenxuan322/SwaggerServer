@@ -2,6 +2,7 @@ package indi.swagger.service;
 
 import indi.swagger.entity.FriendsManager;
 
+import java.util.List;
 import java.util.Map;
 
 public interface FriendService {
@@ -34,4 +35,11 @@ public interface FriendService {
      * @param friendsManager
      */
     void deleteFriends(FriendsManager friendsManager);
+
+    /**
+     * 获取好友列表
+     *
+     * @param userId
+     */
+    List<FriendsManager> getFriendList(int userId);
 }

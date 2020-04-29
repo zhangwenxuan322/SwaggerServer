@@ -32,4 +32,16 @@
          where main_user_id = #{mainUserId}
            and friend_user_id = #{friendUserId}
     </select>
+
+    <select id="getFriendList" resultType="indi.swagger.entity.FriendsManager" parameterType="int">
+        select id as id,
+               main_user_id as mainUserId,
+               friend_user_id as friendUserId,
+               remark_name as remarkName,
+               group_name as groupName,
+               create_time as createTime,
+               modify_time as modifyTime
+          from t_user_friend
+         where main_user_id = #{userId}
+    </select>
 </mapper>

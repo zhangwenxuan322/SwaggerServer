@@ -3,6 +3,7 @@ package indi.swagger.mapper;
 import indi.swagger.entity.FriendsManager;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Map;
 
 @Repository
@@ -35,4 +36,12 @@ public interface FriendMapper {
      * @param map
      */
     void deleteFriends(Map<String, Integer> map);
+
+    /**
+     * 获取好友列表
+     *
+     * @param userId
+     * @return
+     */
+    List<FriendsManager> getFriendList(int userId);
 }

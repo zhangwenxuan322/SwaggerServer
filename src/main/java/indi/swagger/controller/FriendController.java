@@ -7,7 +7,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -91,5 +93,17 @@ public class FriendController {
         map.put("code", "400");
         map.put("message", "success");
         return map;
+    }
+
+    /**
+     * 获取好友列表
+     *
+     * @param userId
+     * @return
+     */
+    @GetMapping("friend/list")
+    public List<FriendsManager> getFriendList(@RequestParam int userId) {
+        logger.info("开始获取好友列表");
+        return friendService.getFriendList(userId);
     }
 }
