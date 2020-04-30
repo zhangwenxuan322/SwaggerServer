@@ -10,7 +10,7 @@
     </parent>
     <groupId>indi</groupId>
     <artifactId>swagger</artifactId>
-    <version>0.9.1</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>swagger</name>
     <description>Swagger App's Backend</description>
 
