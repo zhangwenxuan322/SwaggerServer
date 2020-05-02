@@ -38,4 +38,11 @@ public interface FriendReqMapper {
      * @param map
      */
     void updateRequestInfo(Map<String, Object> map);
+
+    /**
+     * 删除好友请求信息
+     *
+     * @param map
+     */
+    void deleteRequestInfo(Map<String, Integer> map);
 }

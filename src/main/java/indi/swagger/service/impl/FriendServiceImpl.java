@@ -2,6 +2,7 @@ package indi.swagger.service.impl;
 
 import indi.swagger.entity.FriendsManager;
 import indi.swagger.mapper.FriendMapper;
+import indi.swagger.mapper.FriendReqMapper;
 import indi.swagger.service.FriendService;
 import indi.swagger.service.NearbyService;
 import org.slf4j.Logger;
@@ -25,6 +26,7 @@ public class FriendServiceImpl implements FriendService {
     Logger logger = LoggerFactory.getLogger(FriendService.class);
     @Autowired
     FriendMapper friendMapper;
+    FriendReqMapper friendReqMapper;
 
     @Override
     public FriendsManager selectFriendsByMainAndFriend(Map<String, Integer> map) {
@@ -60,10 +62,12 @@ public class FriendServiceImpl implements FriendService {
         map.put("mainUserId", friendsManager.getMainUserId());
         map.put("friendUserId", friendsManager.getFriendUserId());
         friendMapper.deleteFriends(map);
+        friendReqMapper.deleteRequestInfo(map);
         map.clear();
         map.put("mainUserId", friendsManager.getFriendUserId());
         map.put("friendUserId", friendsManager.getMainUserId());
         friendMapper.deleteFriends(map);
+        friendReqMapper.deleteRequestInfo(map);
     }
 
     @Override

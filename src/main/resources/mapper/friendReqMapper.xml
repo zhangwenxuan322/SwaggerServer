@@ -13,6 +13,12 @@
          where req_id = #{reqId}
     </update>
 
+    <delete id="deleteRequestInfo" parameterType="map">
+        delete from t_friend_request
+              where req_main_user_id = #{mainUserId}
+                and req_sub_user_id = #{friendUserId}
+    </delete>
+
     <select id="selectRequestByMainAndSubId" resultType="indi.swagger.entity.FriendRequest" parameterType="map">
         select req_id as reqId,
                req_main_user_id as reqMainId,
