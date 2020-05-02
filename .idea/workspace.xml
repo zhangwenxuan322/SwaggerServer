@@ -3,30 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="04d8deb3-5c20-4b57-84bc-4daefdff3bb9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/opendoc.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/opendoc.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/indi/swagger/controller/VerCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/controller/VerCodeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/indi/swagger/SwaggerApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/indi/swagger/constant/Constant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/indi/swagger/entity/UserLoginInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/indi/swagger/entity/UserProfile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/indi/swagger/mapper/UserMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/indi/swagger/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/indi/swagger/service/impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/indi/swagger/util/EncryptionUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j2.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/userMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-indi.swagger.SwaggerApplicationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/indi.swagger.SwaggerApplicationTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/swagger-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/swagger-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/indi/swagger/SwaggerApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/indi/swagger/controller/FriendController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/controller/FriendController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +76,7 @@
     <property name="settings.editor.selected.configurable" value="com.alibabacloud.intellij.config.AccountConfigurable" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
-  <component name="RunManager" selected="Spring Boot.SwaggerApplication">
+  <component name="RunManager" selected="Deploy to Host.Deploy to Host">
     <configuration name="Deploy to Host" type="DEPLOY_HOST_RUN_CONFIGURATION" factoryName="Deploy to Host">
       <option name="address" value="106.15.91.232" />
       <option name="afterCommand" value="" />
@@ -317,14 +294,9 @@
       <workItem from="1587949661933" duration="1708000" />
       <workItem from="1588035976899" duration="581000" />
       <workItem from="1588122259179" duration="8296000" />
-      <workItem from="1588213976116" duration="721000" />
-    </task>
-    <task id="LOCAL-00002" summary="新增了README">
-      <created>1582096092566</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1582096092566</updated>
+      <workItem from="1588213976116" duration="1665000" />
+      <workItem from="1588402395683" duration="814000" />
+      <workItem from="1588414175741" duration="95000" />
     </task>
     <task id="LOCAL-00003" summary="删除HELP.md">
       <created>1582096489085</created>
@@ -662,7 +634,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588143116563</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="submit">
+      <created>1588222461650</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1588222461650</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -700,7 +679,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="将登录信息表位置字段分为经纬度字段，添加设备号字段" />
     <MESSAGE value="添加附近用户查询接口" />
     <MESSAGE value="新增验证码接口文档" />
     <MESSAGE value="新增手机号查询用户接口文档" />
@@ -725,7 +703,8 @@
     <MESSAGE value="更新用户修改头像接口对应文档" />
     <MESSAGE value="修改好友申请处理接口，添加好友关系的建立处理" />
     <MESSAGE value="新增获取好友列表接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增获取好友列表接口" />
+    <MESSAGE value="submit" />
+    <option name="LAST_COMMIT_MESSAGE" value="submit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="541" y="112" key="#Deploy_to_Host" timestamp="1588143508025">
@@ -772,40 +751,40 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1018" y="484" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1580741276494" />
-    <state x="440" y="23" key="CommitChangelistDialog2" timestamp="1588143113312">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="783" y="239" key="CommitChangelistDialog2" timestamp="1588222460408">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="783" y="239" key="CommitChangelistDialog2/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1583910937520" />
     <state x="440" y="23" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1588143113312" />
-    <state x="783" y="239" key="CommitChangelistDialog2/0.23.2560.1417@0.23.2560.1417" timestamp="1587788215485" />
+    <state x="783" y="239" key="CommitChangelistDialog2/0.23.2560.1417@0.23.2560.1417" timestamp="1588222460408" />
     <state x="100" y="123" width="2360" height="1217" key="DiffContextDialog" timestamp="1582957914843">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="100" y="123" width="2360" height="1217" key="DiffContextDialog/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1582957914843" />
-    <state width="2560" height="383" key="GridCell.Tab.0.bottom" timestamp="1588179921874">
+    <state width="2560" height="383" key="GridCell.Tab.0.bottom" timestamp="1588414386726">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="2560" height="301" key="GridCell.Tab.0.bottom/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1583934469424" />
     <state width="1440" height="211" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1588143606232" />
-    <state width="2560" height="383" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1588179921874" />
-    <state width="2560" height="383" key="GridCell.Tab.0.center" timestamp="1588179921869">
+    <state width="2560" height="383" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1588414386726" />
+    <state width="2560" height="383" key="GridCell.Tab.0.center" timestamp="1588414386724">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="2560" height="301" key="GridCell.Tab.0.center/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1583934469423" />
     <state width="1440" height="211" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1588143606231" />
-    <state width="2560" height="383" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1588179921869" />
-    <state width="2560" height="383" key="GridCell.Tab.0.left" timestamp="1588179921856">
+    <state width="2560" height="383" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1588414386724" />
+    <state width="2560" height="383" key="GridCell.Tab.0.left" timestamp="1588414386724">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="2560" height="301" key="GridCell.Tab.0.left/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1583934469423" />
     <state width="1440" height="211" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1588143606230" />
-    <state width="2560" height="383" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1588179921856" />
-    <state width="2560" height="383" key="GridCell.Tab.0.right" timestamp="1588179921871">
+    <state width="2560" height="383" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1588414386724" />
+    <state width="2560" height="383" key="GridCell.Tab.0.right" timestamp="1588414386725">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="2560" height="301" key="GridCell.Tab.0.right/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1583934469423" />
     <state width="1440" height="211" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1588143606231" />
-    <state width="2560" height="383" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1588179921871" />
+    <state width="2560" height="383" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1588414386725" />
     <state width="1440" height="211" key="GridCell.Tab.1.bottom" timestamp="1588143138548">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -843,12 +822,12 @@
     </state>
     <state x="222" y="101" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1588143478649" />
     <state x="768" y="312" key="SettingsEditor/0.23.2560.1417@0.23.2560.1417" timestamp="1584885681317" />
-    <state x="320" y="198" key="Vcs.Push.Dialog.v2" timestamp="1588143118825">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="880" y="466" key="Vcs.Push.Dialog.v2" timestamp="1588222463782">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="880" y="466" key="Vcs.Push.Dialog.v2/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1583910939919" />
     <state x="320" y="198" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1588143118825" />
-    <state x="880" y="466" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1587788218158" />
+    <state x="880" y="466" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1588222463782" />
     <state x="961" y="512" key="git4idea.merge.GitPullDialog" timestamp="1582957825857">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>

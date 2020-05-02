@@ -85,7 +85,7 @@ public class FriendController {
      * @param friendsManager
      * @return
      */
-    @DeleteMapping("friend/release")
+    @PostMapping("friend/release")
     public Map<String, String> friendRelease(@RequestBody FriendsManager friendsManager) {
         logger.info("开始解除好友关系：" + friendsManager);
         friendService.deleteFriends(friendsManager);
