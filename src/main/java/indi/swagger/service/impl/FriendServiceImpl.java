@@ -26,6 +26,7 @@ public class FriendServiceImpl implements FriendService {
     Logger logger = LoggerFactory.getLogger(FriendService.class);
     @Autowired
     FriendMapper friendMapper;
+    @Autowired
     FriendReqMapper friendReqMapper;
 
     @Override

@@ -1,5 +1,10 @@
 package indi.swagger.util;
 
+import org.springframework.util.ResourceUtils;
+
+import javax.servlet.http.HttpServletResponse;
+import java.io.*;
+import java.nio.file.Paths;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -10,6 +15,7 @@ import java.util.regex.Pattern;
  * @create: 2020-02-19 22:14
  **/
 public class SystemUtil {
+
     /**
      * 生成相应位数的验证码
      * @param codeLength
@@ -71,5 +77,44 @@ public class SystemUtil {
             }
             return false;
         }
+    }
+
+    public static String downloadFile(HttpServletResponse response, String fileName) {
+        File path = null;
+        response.setHeader("content-type", "application/octet-stream");
+        response.setContentType("application/octet-stream");
+        try {
+            response.setHeader("Content-Disposition", "attachment;filename=" + java.net.URLEncoder.encode(fileName, "UTF-8"));
+        } catch (UnsupportedEncodingException e2) {
+            e2.printStackTrace();
+        }
+        byte[] buff = new byte[1024];
+        BufferedInputStream bis = null;
+        OutputStream os = null;
+        try {
+            path = Paths.get("/home/admin/apk").resolve(fileName).toFile();
+            os = response.getOutputStream();
+            bis = new BufferedInputStream(new FileInputStream(path));
+            int i = bis.read(buff);
+            while (i != -1) {
+                os.write(buff, 0, buff.length);
+                os.flush();
+                i = bis.read(buff);
+            }
+        } catch (FileNotFoundException e1) {
+            //e1.getMessage()+"系统找不到指定的文件";
+            return "系统找不到指定的文件";
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (bis != null) {
+                try {
+                    bis.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return "success";
     }
 }

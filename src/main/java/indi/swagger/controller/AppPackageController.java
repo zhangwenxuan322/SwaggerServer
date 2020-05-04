@@ -6,12 +6,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.core.io.FileSystemResource;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
@@ -81,5 +82,27 @@ public class AppPackageController {
     @GetMapping("apk/latest")
     public AppPackage getLatestApk() {
         return appPackageService.selectLatestApk();
+    }
+
+    /**
+     * 下载apk
+     *
+     * @param filename
+     * @return
+     */
+    @GetMapping("apk/{filename}")
+    public ResponseEntity<FileSystemResource> download(@PathVariable(value = "filename") String filename) {
+        logger.info("开始下载Apk，文件名：" + filename);
+        if (filename == null || filename.isEmpty()) {
+            return null;
+        }
+        File file = Paths.get(uploadPathStr).resolve(filename).toFile();
+        if (file.exists() && file.canRead()) {
+            return ResponseEntity.ok()
+                    .contentType(MediaType.parseMediaType("application/octet-stream"))
+                    .body(new FileSystemResource(file));
+        } else {
+            return null;
+        }
     }
 }
