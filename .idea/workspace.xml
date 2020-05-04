@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04d8deb3-5c20-4b57-84bc-4daefdff3bb9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/exception/opendoc_exception.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/exception/opendoc_exception.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/opendoc.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/opendoc.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/indi/swagger/controller/AppPackageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/controller/AppPackageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/indi/swagger/service/impl/FriendServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/service/impl/FriendServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/indi/swagger/util/SystemUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indi/swagger/util/SystemUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -303,14 +298,7 @@
       <workItem from="1588414175741" duration="317000" />
       <workItem from="1588423230567" duration="1793000" />
       <workItem from="1588471667497" duration="1291000" />
-      <workItem from="1588599294196" duration="1479000" />
-    </task>
-    <task id="LOCAL-00005" summary="实现查询用户API">
-      <created>1582103380270</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1582103380270</updated>
+      <workItem from="1588599294196" duration="1557000" />
     </task>
     <task id="LOCAL-00006" summary="加入手机短信验证码模拟模块">
       <created>1582118735765</created>
@@ -648,7 +636,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588423693423</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="新增Apk下载接口">
+      <created>1588601101986</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1588601101987</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -686,7 +681,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="新增手机号查询用户接口文档" />
     <MESSAGE value="完成现有接口文档" />
     <MESSAGE value="modify README" />
     <MESSAGE value="修改附近的人接口，添加昵称和性别筛选" />
@@ -711,7 +705,8 @@
     <MESSAGE value="submit" />
     <MESSAGE value="修改删除好友接口的请求方式" />
     <MESSAGE value="修改删除好友接口，再删除好友时删除请求信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改删除好友接口，再删除好友时删除请求信息" />
+    <MESSAGE value="新增Apk下载接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增Apk下载接口" />
   </component>
   <component name="WindowStateProjectService">
     <state x="541" y="112" key="#Deploy_to_Host" timestamp="1588143508025">
@@ -758,12 +753,12 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1018" y="484" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1580741276494" />
-    <state x="783" y="239" key="CommitChangelistDialog2" timestamp="1588423692813">
+    <state x="783" y="239" key="CommitChangelistDialog2" timestamp="1588601101580">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="783" y="239" key="CommitChangelistDialog2/-1440.23.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1583910937520" />
     <state x="440" y="23" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1588143113312" />
-    <state x="783" y="239" key="CommitChangelistDialog2/0.23.2560.1417@0.23.2560.1417" timestamp="1588423692813" />
+    <state x="783" y="239" key="CommitChangelistDialog2/0.23.2560.1417@0.23.2560.1417" timestamp="1588601101580" />
     <state x="100" y="123" width="2360" height="1217" key="DiffContextDialog" timestamp="1582957914843">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>

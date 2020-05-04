@@ -254,3 +254,7 @@
 - 请求URL：`/swagger/apk/latest`
 - 请求方式：`GET`
 - 请求参数：无
+#### 下载Apk
+- 请求URL：`/swagger/apk/{filename}`
+- 请求方式：`GET`
+- 请求参数：`filename`
